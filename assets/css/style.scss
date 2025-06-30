@@ -94,18 +94,44 @@ button {
   border: none;
 }
 // Utilities
+$breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+);
+
 @for $i from 1 through 16 {
+  // Base (non-responsive)
   .mt-#{$i} {
-    margin-top: $i * 6px;
+    margin-top: #{6px * $i};
   }
   .mb-#{$i} {
-    margin-bottom: $i * 8px;
+    margin-bottom: #{8px * $i};
   }
   .pt-#{$i} {
-    padding-top: $i * 6px;
+    padding-top: #{6px * $i};
   }
   .pb-#{$i} {
-    padding-bottom: $i * 8px;
+    padding-bottom: #{8px * $i};
+  }
+
+  // Responsive versions
+  @each $bp, $bp-value in $breakpoints {
+    @media (min-width: $bp-value) {
+      .#{$bp}\:mt-#{$i} {
+        margin-top: #{6px * $i};
+      }
+      .#{$bp}\:mb-#{$i} {
+        margin-bottom: #{8px * $i};
+      }
+      .#{$bp}\:pt-#{$i} {
+        padding-top: #{6px * $i};
+      }
+      .#{$bp}\:pb-#{$i} {
+        padding-bottom: #{8px * $i};
+      }
+    }
   }
 }
 
@@ -183,6 +209,9 @@ button {
   border-radius: 30px;
   overflow: hidden;
 
+  @media (max-width: 768px) {
+    padding: 10px;
+  }
   // Navbar
   .navbar {
     position: absolute;
@@ -488,6 +517,7 @@ button {
 @media (max-width: 768px) {
   .header {
     .navbar {
+      width: calc(100% - 10px);
       .nav-container {
         align-items: center;
       }
@@ -536,7 +566,7 @@ button {
   }
 
   .card {
-    padding: 20px;
+    padding: 0px;
   }
 }
 .header-banner {
@@ -548,6 +578,10 @@ button {
   &-image img {
     width: 100%;
     filter: brightness(80%);
+
+    @media (max-width: 768px) {
+      height: 700px;
+    }
   }
 
   &-content {
@@ -561,16 +595,32 @@ button {
     left: 10%;
     color: $color-white;
 
+    @media (max-width: 768px) {
+      top: 55%;
+    }
+
     .header-banner-title {
       font-size: $font-size-3xl;
+      @media (max-width: 768px) {
+        font-size: 1.65rem;
+      }
     }
     .header-banner-sub-title {
       font-weight: 400;
       font-size: $font-size-lg;
+
+      @media (max-width: 768px) {
+        font-size: 16px;
+      }
     }
     .header-banner-description {
       max-width: 850px;
       border-top: 0.5px solid $color-white;
+
+      p {
+        font-size: 12px;
+        line-height: 18px;
+      }
     }
   }
 }
@@ -803,6 +853,8 @@ button {
         cursor: pointer;
         transform: translate(-35%, 14%);
 
+
+
         @media (max-width: 768px) {
           transform: translate(8%, 0%);
         }
@@ -812,8 +864,8 @@ button {
           padding: 20px;
 
           svg {
-            width: 24px;
-            height: 24px;
+            width: 26px;
+            height: 26px;
           }
         }
       }
@@ -821,6 +873,7 @@ button {
         position: relative;
       }
       .card-content-wrapper {
+        min-height:500px;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.04);
         clip-path: polygon(
           9.202% 0%,
@@ -1095,6 +1148,11 @@ button {
   border-bottom-right-radius: 30px;
   position: relative;
   background-color: #e5c466;
+
+  @media (max-width: 768px) {
+    margin-inline: 10px;
+    margin-bottom: 10px;
+  }
 
   .footer-top {
     position: absolute;

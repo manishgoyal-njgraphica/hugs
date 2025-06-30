@@ -18,7 +18,7 @@ const swipperLayoutfour = new Swiper(".swipper-layout-four", {
 });
 
 const swipperLayoutThree = new Swiper(".swipper-layout-three", {
-  slidesPerView: 1.2,
+  slidesPerView: 1,
   spaceBetween: 30,
   breakpoints: {
     768: {
@@ -29,7 +29,7 @@ const swipperLayoutThree = new Swiper(".swipper-layout-three", {
     },
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".button-next",
+    prevEl: ".button-prev",
   },
 });
