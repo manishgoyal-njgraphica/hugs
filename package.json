@@ -1,0 +1,16 @@
+{
+  "name": "hugs",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch assets/css/style.scss:assets/css/output.css"
+  },
+  "devDependencies": {
+    "sass": "^1.89.2"
+  }
+}

@@ -1,0 +1,15 @@
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Node modules (if used)
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Cache / temp files
+*.log
+.cache/
+.tmp/
