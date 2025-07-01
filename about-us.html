@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/output.css" />
+
+    <!-- Swiper JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script src="./assets/js/swipper.js" defer></script>
+
+    <!-- Navbar Js  -->
+    <script src="./assets/js/navbar.js" defer></script>
+  </head>
+  <body>
+    <header class="header about-us-header">
+      <!-- Navigation Bar -->
+      <nav class="navbar">
+        <div class="nav-container">
+          <!-- Mobile Hamburger -->
+          <div class="hamburger" id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+
+          <!-- Logo -->
+          <div class="nav-logo">
+            <a href="#" class="logo">
+              <img src="./assets/images/HUGS Logo Final White-01.png" />
+            </a>
+          </div>
+
+          <!-- Desktop Navigation Links -->
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Contact</a>
+            </li>
+          </ul>
+
+          <!-- Desktop CTA Button -->
+          <div class="nav-buttons">
+            <div class="contact-us">
+              <a href="tel:+%201(212)%20255-511">
+                <span class="phone-icon">
+                  <img src="./assets/images/phone.svg" />
+                </span>
+
+                <span class="pbmit-header-button-text-1">+91 (212)255-511</span>
+              </a>
+            </div>
+            <button class="button primary-button">
+              Get Started
+              <div class="button__circle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  id="Layer_1"
+                  data-name="Layer 1"
+                  viewBox="0 0 1402.53 1457.81"
+                  class="button__icon"
+                >
+                  <defs>
+                    <style>
+                      .cls-1 {
+                        fill: none;
+                        stroke: #000;
+                        stroke-miterlimit: 10;
+                        stroke-width: 90.41px;
+                      }
+                    </style>
+                  </defs>
+                  <line
+                    class="cls-1"
+                    x1="39.75"
+                    y1="1420.36"
+                    x2="1376.18"
+                    y2="40.2"
+                  />
+                  <path
+                    class="cls-1"
+                    d="M53.72,61.46c59.41,50.9,296.13,241.65,652.42,240.56,369.81-1.13,611.09-208.15,667-258.78"
+                  />
+                  <path
+                    class="cls-1"
+                    d="M1356.99,1360.99c-50.9-59.41-241.65-296.13-240.56-652.42,1.13-369.81,208.15-611.09,258.78-667"
+                  />
+                  <!-- Code injected by live-server -->
+                </svg>
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  id="Layer_1"
+                  class="button__icon button__icon--copy"
+                  data-name="Layer 1"
+                  viewBox="0 0 1402.53 1457.81"
+                  class="button__icon"
+                >
+                  <defs>
+                    <style>
+                      .cls-1 {
+                        fill: none;
+                        stroke: #000;
+                        stroke-miterlimit: 10;
+                        stroke-width: 90.41px;
+                      }
+                    </style>
+                  </defs>
+                  <line
+                    class="cls-1"
+                    x1="39.75"
+                    y1="1420.36"
+                    x2="1376.18"
+                    y2="40.2"
+                  />
+                  <path
+                    class="cls-1"
+                    d="M53.72,61.46c59.41,50.9,296.13,241.65,652.42,240.56,369.81-1.13,611.09-208.15,667-258.78"
+                  />
+                  <path
+                    class="cls-1"
+                    d="M1356.99,1360.99c-50.9-59.41-241.65-296.13-240.56-652.42,1.13-369.81,208.15-611.09,258.78-667"
+                  />
+                  <!-- Code injected by live-server -->
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Mobile Drawer Overlay -->
+      <div class="drawer-overlay" id="drawerOverlay"></div>
+
+      <!-- Mobile Drawer -->
+      <div class="mobile-drawer" id="mobileDrawer">
+        <div class="drawer-header">
+          <div class="drawer-logo">
+            <div class="logo-icon">Menu</div>
+          </div>
+          <button class="close-btn" id="closeBtn">&times;</button>
+        </div>
+        <ul class="drawer-menu">
+          <li><a href="#" class="drawer-link">Home</a></li>
+          <li><a href="#" class="drawer-link">About</a></li>
+          <li><a href="#" class="drawer-link">Services</a></li>
+          <li><a href="#" class="drawer-link">Portfolio</a></li>
+          <li><a href="#" class="drawer-link">Contact</a></li>
+        </ul>
+        <div class="drawer-footer">
+          <button class="drawer-cta-btn">Get Started</button>
+        </div>
+      </div>
+      <div class="header-banner">
+        <div class="header-banner-image">
+          <picture>
+            <!-- Mobile image (up to 767px) -->
+            <source
+              media="(max-width: 767px)"
+              srcset="./assets/images/temp.jpg"
+            />
+
+            <!-- Desktop image (768px and above) -->
+            <source
+              media="(min-width: 768px)"
+              srcset="./assets/images/hero-banner.jpg"
+            />
+
+            <!-- Fallback image if <source> isn't supported -->
+            <img
+              src="./assets/images/hero-banner-desktop.jpg"
+              alt="Header Banner"
+            />
+          </picture>
+        </div>
+
+        <div class="header-banner-content">
+          <h1 class="header-banner-title mb-4">
+            Because every child deserves to feel seen. And every parent deserves
+            to feel supported.
+          </h1>
+
+          <div class="header-banner-description pt-3">
+            <p>
+              At <strong>HUGS,</strong>we understand that reaching out for help
+              isn’t always easy. Especially when it’s about your child.
+            </p>
+            <br />
+            <p>
+              You may be feeling unsure. You may have questions you don’t know
+              how to ask. Or maybe… You just have a feeling that something’s not
+              quite right.
+            </p>
+            <br />
+            <p>
+              Whatever brings you here, we want you to know you’re not alone.
+              And you’re in the right place.
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="container">
+      <div class="yoga-section mt-16 mb-16">
+        <div class="yoga-image">
+          <img src="./assets/images/about-img.jpg" alt="Yoga Woman" />
+        </div>
+        <div class="yoga-content">
+          <h2>Who We Are</h2>
+          <div class="desc">
+            <p>
+              HUGS is a child development initiative by HULM, created to support
+              children in ways that honour who they are, how they grow, and what
+              they uniquely need. Whether your child is neurotypical or
+              neurodivergent, we walk alongside your family with care,
+              knowledge, and compassion.
+            </p>
+
+            <p>
+              We bring together a team of kind, skilled professionals like child
+              psychologists, occupational therapists, speech-language
+              specialists, special educators, paediatric neurologists, and
+              behavioural therapists, who work collaboratively to offer
+              personalised, holistic care for your child.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="yoga-section mt-16 mb-16">
+        <div class="yoga-content">
+          <h2>What We Believe</h2>
+          <div class="desc">
+            <p>
+              We believe every child deserves to be met with understanding, not
+              assumptions. We believe early support can change the course of a
+              child’s life. We believe parents shouldn’t have to navigate this
+              alone.
+            </p>
+
+            <p>
+              At HUGS, we don’t rush to label. We listen. We observe. We take
+              time to understand your child, not just their challenges, but
+              their strengths, their joys, and the way they see the world.
+            </p>
+          </div>
+        </div>
+
+        <div class="yoga-image">
+          <img src="./assets/images/about-img.jpg" alt="Yoga Woman" />
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="yoga-section mt-16 mb-16">
+        <div class="yoga-image">
+          <img src="./assets/images/about-img.jpg" alt="Yoga Woman" />
+        </div>
+        <div class="yoga-content">
+          <h2>A Space to Breathe</h2>
+          <div class="desc">
+            <p>
+              Our centre is warm, inclusive, and designed to feel safe, not just
+              for children, but for parents too. We know how much courage it
+              takes to walk through that door for the first time. That’s why our
+              approach is always gentle, honest, and non-judgmental.
+            </p>
+
+            <p>
+              You don’t have to have it all figured out. That’s what we’re here
+              for.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container">
+      <div class="yoga-section mt-16 mb-16">
+        <div class="yoga-content">
+          <h2>Your Family, Our Focus</h2>
+          <div class="desc">
+            <p>We support the child, but we walk with the family.</p>
+
+            <p>
+              Because when parents feel seen and supported, they can show up
+              with more clarity, calm, and connection, which makes all the
+              difference in a child’s life.
+            </p>
+            <p>
+              We’ll sit with you in the uncertainty. <br />
+              We’ll guide you with experience. <br />
+              And together, we’ll find a way forward that truly fits your child
+              and your heart.
+            </p>
+          </div>
+        </div>
+
+        <div class="yoga-image">
+          <img src="./assets/images/about-img.jpg" alt="Yoga Woman" />
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section container mt-16">
+      <div class="call-us mb-8">
+        <h2>Let’s build a path of care, together.</h2>
+        <button class="button primary-button">
+          CONTACT US
+          <div class="button__circle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              id="Layer_1"
+              data-name="Layer 1"
+              viewBox="0 0 1402.53 1457.81"
+              class="button__icon"
+            >
+              <defs>
+                <style>
+                  .cls-1 {
+                    fill: none;
+                    stroke: #000;
+                    stroke-miterlimit: 10;
+                    stroke-width: 90.41px;
+                  }
+                </style>
+              </defs>
+              <line
+                class="cls-1"
+                x1="39.75"
+                y1="1420.36"
+                x2="1376.18"
+                y2="40.2"
+              />
+              <path
+                class="cls-1"
+                d="M53.72,61.46c59.41,50.9,296.13,241.65,652.42,240.56,369.81-1.13,611.09-208.15,667-258.78"
+              />
+              <path
+                class="cls-1"
+                d="M1356.99,1360.99c-50.9-59.41-241.65-296.13-240.56-652.42,1.13-369.81,208.15-611.09,258.78-667"
+              />
+              <!-- Code injected by live-server -->
+            </svg>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              id="Layer_1"
+              class="button__icon button__icon--copy"
+              data-name="Layer 1"
+              viewBox="0 0 1402.53 1457.81"
+              class="button__icon"
+            >
+              <defs>
+                <style>
+                  .cls-1 {
+                    fill: none;
+                    stroke: #000;
+                    stroke-miterlimit: 10;
+                    stroke-width: 90.41px;
+                  }
+                </style>
+              </defs>
+              <line
+                class="cls-1"
+                x1="39.75"
+                y1="1420.36"
+                x2="1376.18"
+                y2="40.2"
+              />
+              <path
+                class="cls-1"
+                d="M53.72,61.46c59.41,50.9,296.13,241.65,652.42,240.56,369.81-1.13,611.09-208.15,667-258.78"
+              />
+              <path
+                class="cls-1"
+                d="M1356.99,1360.99c-50.9-59.41-241.65-296.13-240.56-652.42,1.13-369.81,208.15-611.09,258.78-667"
+              />
+              <!-- Code injected by live-server -->
+            </svg>
+          </div>
+        </button>
+      </div>
+      <div class="contact-cards">
+        <div class="contact-card">
+          <img class="background-image" src="./assets/images/icon-bg.png" />
+          <div class="content">
+            <div class="badge pb-4">
+              <span> OUR UPCOMING </span>
+            </div>
+            <h2 class="pb-5">Ready to start learn?<br />Sign up now!</h2>
+            <a href="#" class="btn">Sign Up Now </a>
+          </div>
+        </div>
+
+        <div class="contact-card t-t-t">
+          <div class="content">
+            <div class="badge pb-4">
+              <span> OUR UPCOMING </span>
+            </div>
+            <h2 class="pb-5">Ready to start learn?<br />Sign up now!</h2>
+            <a href="#" class="btn">Sign Up Now </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer mt-16">
+      <div class="footer-top">
+        <div class="menu">
+          <ul>
+            <li>CLASSES</li>
+            <li>TRAINERS</li>
+            <li>SCHEDULE</li>
+            <li>EVENT</li>
+          </ul>
+        </div>
+
+        <div class="contact-us">
+          <a href="tel:+%201(212)%20255-511">
+            <span class="phone-icon">
+              <img src="./assets/images/phone.svg" />
+            </span>
+            <span class="pbmit-header-button-text-1">+91 (212)255-511</span>
+          </a>
+        </div>
+      </div>
+      <div class="footer-mid">
+        <div class="footer-column logo-area">
+          <img
+            src="./assets/images/HUGS Logo Final PNG-01.png"
+            alt="Logo"
+            class="footer-logo"
+          />
+          <p>
+            Mauris sed molestie sem. Sed vel vestibulum elit, non accumsan
+            risus. In vitae sapien viverra est Duo ei ullum inani senserit.
+          </p>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-column description-area">
+          <h3>
+            Professional & modern,<br />a theme designed to help your business.
+          </h3>
+          <div class="footer-links">
+            <div>
+              <h4>Useful Link</h4>
+              <ul>
+                <li><a href="#">Company</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4>Working Time</h4>
+              <p>
+                Mon - Fri: 9.00am - 5.00pm<br />Saturday: 10.00am - 6.00pm<br />Sunday
+                Closed
+              </p>
+            </div>
+            <div>
+              <h4>Our Address</h4>
+              <p>Old Westbury 256, New York<br />11201, United States</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-left">
+          <a href="#">Terms and conditions</a> | <a href="#">Privacy policy</a>
+        </div>
+        <div class="footer-right">© 2023 PBM Infotech</div>
+      </div>
+    </footer>
+  </body>
+</html>

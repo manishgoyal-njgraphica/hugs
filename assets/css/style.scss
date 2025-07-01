@@ -5,7 +5,7 @@ body {
 }
 
 // Variables
-$page-max-width: 1850px;
+$page-max-width: 1650px;
 $page-padding: clamp(1rem, 4vw, 4rem);
 
 // Colors
@@ -616,11 +616,6 @@ $breakpoints: (
     .header-banner-description {
       max-width: 850px;
       border-top: 0.5px solid $color-white;
-
-      p {
-        font-size: 12px;
-        line-height: 18px;
-      }
     }
   }
 }
@@ -853,8 +848,6 @@ $breakpoints: (
         cursor: pointer;
         transform: translate(-35%, 14%);
 
-
-
         @media (max-width: 768px) {
           transform: translate(8%, 0%);
         }
@@ -873,7 +866,7 @@ $breakpoints: (
         position: relative;
       }
       .card-content-wrapper {
-        min-height:500px;
+        min-height: 500px;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.04);
         clip-path: polygon(
           9.202% 0%,
@@ -1004,6 +997,15 @@ $breakpoints: (
   .yoga-content {
     flex: 1;
     padding: 60px 40px;
+
+    h2{
+      font-weight: 500;
+    }
+
+    .desc p {
+      font-size: $font-size-base;
+      line-height: 2rem;
+    }
   }
 
   .yoga-content button {
@@ -1017,7 +1019,6 @@ $breakpoints: (
 
   .yoga-content h2 {
     font-size: 40px;
-    font-weight: 800;
     margin-bottom: 20px;
     line-height: 1.2;
   }
@@ -1344,6 +1345,17 @@ $breakpoints: (
 
     .footer-right {
       color: $color-text;
+    }
+  }
+}
+
+// About Us
+
+.about-us-header {
+  .header-banner-content {
+    max-width: 1200px;
+    .header-banner-title {
+      font-size: $font-size-2xl;
     }
   }
 }
