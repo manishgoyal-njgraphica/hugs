@@ -1737,7 +1737,7 @@ button {
   bottom: 0px;
   right: 0px;
   cursor: pointer;
-  transform: translate(-35%, 14%);
+  transform: translate(-15%, -10%);
 }
 @media (max-width: 768px) {
   .services-section .swiper-slide.card .arrow-btn {
@@ -1762,26 +1762,6 @@ button {
   background: #f5f8f6;
   padding: 55px 40px 45px;
 }
-.services-section .swiper-slide.card .card-content-wrapper .trainer a {
-  font-size: clamp(0.75rem, 0.9vw, 0.875rem);
-  color: #1c1c1c;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
-  position: relative;
-  padding-left: 12px;
-  font-weight: 600;
-}
-.services-section .swiper-slide.card .card-content-wrapper .trainer a::before {
-  position: absolute;
-  content: "";
-  width: 8px;
-  height: 8px;
-  background-color: #448c74;
-  border-radius: 50%;
-  left: 0;
-  top: 50%;
-  transform: translate(0, -50%);
-}
 .services-section .swiper-slide.card .card-content-wrapper h3 {
   font-size: calc(clamp(2rem, 3vw, 3rem) - 8px);
   margin: 0.5rem 0;
@@ -1789,6 +1769,8 @@ button {
 .services-section .swiper-slide.card .card-content-wrapper .pose-img {
   width: 100px;
   align-self: flex-start;
+  position: absolute;
+  top: 68%;
 }
 
 .yoga-section {

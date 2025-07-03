@@ -824,7 +824,7 @@ $breakpoints: (
         bottom: 0px;
         right: 0px;
         cursor: pointer;
-        transform: translate(-35%, 14%);
+        transform: translate(-15%, -10%);
 
         @media (max-width: 768px) {
           transform: translate(8%, 0%);
@@ -911,29 +911,6 @@ $breakpoints: (
         background: #f5f8f6;
         padding: 55px 40px 45px;
 
-        .trainer {
-          a {
-            font-size: $font-size-sm;
-            color: #1c1c1c;
-            text-transform: uppercase;
-            letter-spacing: 0.03em;
-            position: relative;
-            padding-left: 12px;
-            font-weight: 600;
-          }
-          a::before {
-            position: absolute;
-            content: "";
-            width: 8px;
-            height: 8px;
-            background-color: $color-secondary;
-            border-radius: 50%;
-            left: 0;
-            top: 50%;
-            transform: translate(0, -50%);
-          }
-        }
-
         h3 {
           font-size: calc($font-size-xl - 8px);
           margin: 0.5rem 0;
@@ -942,6 +919,8 @@ $breakpoints: (
         .pose-img {
           width: 100px;
           align-self: flex-start;
+          position: absolute;
+          top: 68%;
         }
       }
     }
