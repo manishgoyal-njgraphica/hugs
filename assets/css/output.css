@@ -1814,10 +1814,11 @@ button {
 }
 .yoga-section .yoga-content {
   flex: 1;
-  padding: 60px 40px;
+  padding: 86px 40px;
 }
 .yoga-section .yoga-content h2 {
   font-weight: 500;
+  line-height: normal;
 }
 .yoga-section .yoga-content .desc p {
   font-size: clamp(0.875rem, 1.2vw, 1rem);
