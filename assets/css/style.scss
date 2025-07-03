@@ -151,7 +151,6 @@ $breakpoints: (
   &:hover {
     background: $color-white;
     transform: scale(1.05);
-    color: $color-white;
 
     .button__icon {
       &:first-child {
@@ -1261,7 +1260,7 @@ $breakpoints: (
 
       .footer-links {
         display: flex;
-        gap: 50px;
+        gap: 80px;
         flex-wrap: wrap;
 
         div {
@@ -1504,7 +1503,7 @@ $breakpoints: (
   .bell-icon {
     // width: 80px;
     // height: 80px;
-    padding:20px;
+    padding: 20px;
     background-color: #e5c466;
     border-radius: 50%;
     display: flex;
@@ -1514,7 +1513,7 @@ $breakpoints: (
 
     img {
       width: 100px;
-      height:100px;
+      height: 100px;
       fill: #2d5a3d;
     }
   }
@@ -1522,8 +1521,8 @@ $breakpoints: (
   .text-content {
     h2 {
       color: white;
-      font-size:$font-size-xl;
-        margin-bottom: 20px;
+      font-size: $font-size-xl;
+      margin-bottom: 20px;
 
       @media (max-width: 768px) {
         font-size: 1.8rem;
@@ -1533,10 +1532,10 @@ $breakpoints: (
         font-size: 1.6rem;
       }
     }
-    h3{
-      font-size:$font-size-lg;
+    h3 {
+      font-size: $font-size-lg;
       line-height: 36px;
-      color:$color-white;
+      color: $color-white;
     }
   }
 

@@ -1214,7 +1214,6 @@ button {
 .button:hover {
   background: #ffffff;
   transform: scale(1.05);
-  color: #ffffff;
 }
 .button:hover .button__icon:first-child {
   transition: transform 0.3s ease-in-out;
@@ -2071,7 +2070,7 @@ button {
 }
 .site-footer .footer-mid .description-area .footer-links {
   display: flex;
-  gap: 50px;
+  gap: 80px;
   flex-wrap: wrap;
 }
 .site-footer .footer-mid .description-area .footer-links div h4 {
