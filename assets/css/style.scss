@@ -573,7 +573,7 @@ $breakpoints: (
     position: absolute;
     transform: translate(0%, -60%);
     top: 60%;
-    left: 10%;
+    left: 5%;
     color: $color-white;
 
     @media (max-width: 768px) {
@@ -586,7 +586,7 @@ $breakpoints: (
     }
     .header-banner-sub-title {
       font-weight: 400;
-      font-size: $font-size-base;
+      font-size: $font-size-lg;
 
       @media (max-width: 768px) {
         font-size: 16px;

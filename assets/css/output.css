@@ -1570,7 +1570,7 @@ button {
   position: absolute;
   transform: translate(0%, -60%);
   top: 60%;
-  left: 10%;
+  left: 5%;
   color: #ffffff;
 }
 @media (max-width: 768px) {
@@ -1584,7 +1584,7 @@ button {
 }
 .header-banner-content .header-banner-sub-title {
   font-weight: 400;
-  font-size: clamp(0.875rem, 1.2vw, 1rem);
+  font-size: clamp(1.125rem, 1.6vw, 1.5rem);
 }
 @media (max-width: 768px) {
   .header-banner-content .header-banner-sub-title {
