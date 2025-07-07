@@ -12,7 +12,7 @@ $page-padding: clamp(1rem, 4vw, 4rem);
 $color-white: #ffffff;
 $color-black: #181a18;
 $color-gray: #8a8d8a;
-$color-gray-300:#d7d7d7;
+$color-gray-300: #d7d7d7;
 $color-gray-900: #1a1a1a;
 
 $color-primary: #808055;
@@ -708,6 +708,18 @@ $breakpoints: (
         background-color: transparent;
         border: 1px solid $color-black;
         transition: all 500ms ease;
+
+        &[aria-disabled="false"] {
+          cursor: pointer;
+          opacity: 1;
+        }
+
+        /* Disabled state (aria-disabled="true") */
+        &[aria-disabled="true"] {
+          cursor: not-allowed;
+          opacity: 0.5;
+          pointer-events: none;
+        }
       }
     }
   }
@@ -955,7 +967,6 @@ $breakpoints: (
       border-top-left-radius: 30px;
 
       .mem-box {
-    
         background: $color-white;
         bottom: 0px;
         right: 0px;
@@ -969,7 +980,7 @@ $breakpoints: (
           font-weight: 500;
         }
 
-        .heading{
+        .heading {
           color: $color-gray;
           font-weight: 400;
         }
@@ -980,7 +991,6 @@ $breakpoints: (
           padding-bottom: 30px;
           border-bottom: 1px solid $color-gray-300;
           position: relative;
-          
 
           &::before {
             position: absolute;
@@ -1177,17 +1187,29 @@ $breakpoints: (
 
   .footer-top {
     position: absolute;
+    padding-block: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-inline: 60px;
+    padding-inline: 40px;
     background: #e5c466;
     width: 100%;
     left: 0px;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-    top: -98px;
+    top: -69px;
+
+    .message {
+      padding-block: 14px;
+      background: #e9272a;
+      color: #fff;
+      padding-inline: 26px;
+      border-top-left-radius: 32px;
+      border-bottom-left-radius: 4px;
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 32px;
+    }
 
     @media (max-width: 768px) {
       top: -140px;
@@ -1196,21 +1218,6 @@ $breakpoints: (
       align-items: flex-start;
     }
 
-    .menu ul {
-      display: flex;
-      gap: 40px;
-      padding-block: 40px;
-      list-style: none;
-
-      li {
-        font-size: $font-size-base;
-      }
-      @media (max-width: 768px) {
-        padding-top: 32px;
-        padding-bottom: 22px;
-        gap: 20px;
-      }
-    }
     .contact-us {
       a {
         color: $color-black;
@@ -1675,6 +1682,7 @@ $breakpoints: (
   .header-banner-content {
     max-width: 1200px;
     .header-banner-title {
+      border:none;
       font-size: $font-size-2xl;
     }
   }

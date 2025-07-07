@@ -44,15 +44,15 @@
     let lastScrollTop = 0;
     const navbar = document.querySelector(".navbar");
 
-    window.addEventListener("scroll", () => {
-      const scrollTop =
-        window.pageYOffset || document.documentElement.scrollTop;
+    // window.addEventListener("scroll", () => {
+    //   const scrollTop =
+    //     window.pageYOffset || document.documentElement.scrollTop;
 
-      if (scrollTop > 10) {
-        navbar.style.boxShadow = "0 2px 20px rgba(0, 0, 0, 0.1)";
-      } else {
-        navbar.style.boxShadow = "none";
-      }
+    //   if (scrollTop > 10) {
+    //     navbar.style.boxShadow = "0 2px 20px rgba(0, 0, 0, 0.1)";
+    //   } else {
+    //     navbar.style.boxShadow = "none";
+    //   }
 
-      lastScrollTop = scrollTop;
-    });
+    //   lastScrollTop = scrollTop;
+    // });

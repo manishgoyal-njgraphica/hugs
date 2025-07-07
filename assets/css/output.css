@@ -1687,6 +1687,18 @@ button {
   background-color: transparent;
   border: 1px solid #181a18;
   transition: all 500ms ease;
+  /* Disabled state (aria-disabled="true") */
+}
+.services-section .heading-with-ctrls .controls .button-prev[aria-disabled=false],
+.services-section .heading-with-ctrls .controls .button-next[aria-disabled=false] {
+  cursor: pointer;
+  opacity: 1;
+}
+.services-section .heading-with-ctrls .controls .button-prev[aria-disabled=true],
+.services-section .heading-with-ctrls .controls .button-next[aria-disabled=true] {
+  cursor: not-allowed;
+  opacity: 0.5;
+  pointer-events: none;
 }
 .services-section h2 {
   font-size: clamp(2.5rem, 4vw, 3.875rem);
@@ -1991,17 +2003,28 @@ button {
 }
 .site-footer .footer-top {
   position: absolute;
+  padding-block: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding-inline: 60px;
+  padding-inline: 40px;
   background: #e5c466;
   width: 100%;
   left: 0px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-  top: -98px;
+  top: -69px;
+}
+.site-footer .footer-top .message {
+  padding-block: 14px;
+  background: #e9272a;
+  color: #fff;
+  padding-inline: 26px;
+  border-top-left-radius: 32px;
+  border-bottom-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 32px;
 }
 @media (max-width: 768px) {
   .site-footer .footer-top {
@@ -2009,22 +2032,6 @@ button {
     padding-inline: 26px;
     flex-direction: column;
     align-items: flex-start;
-  }
-}
-.site-footer .footer-top .menu ul {
-  display: flex;
-  gap: 40px;
-  padding-block: 40px;
-  list-style: none;
-}
-.site-footer .footer-top .menu ul li {
-  font-size: clamp(0.875rem, 1.2vw, 1rem);
-}
-@media (max-width: 768px) {
-  .site-footer .footer-top .menu ul {
-    padding-top: 32px;
-    padding-bottom: 22px;
-    gap: 20px;
   }
 }
 .site-footer .footer-top .contact-us a {
@@ -2424,6 +2431,7 @@ button {
   max-width: 1200px;
 }
 .about-us-header .header-banner-content .header-banner-title {
+  border: none;
   font-size: clamp(2.5rem, 4vw, 3.875rem);
 }
 
