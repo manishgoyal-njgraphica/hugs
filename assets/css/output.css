@@ -1982,6 +1982,9 @@ button {
 }
 .contact-section .contact-cards .contact-card img.background-image {
   filter: brightness(80%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .site-footer {
