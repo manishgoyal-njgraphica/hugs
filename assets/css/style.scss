@@ -12,6 +12,7 @@ $page-padding: clamp(1rem, 4vw, 4rem);
 $color-white: #ffffff;
 $color-black: #181a18;
 $color-gray: #8a8d8a;
+$color-gray-300:#d7d7d7;
 $color-gray-900: #1a1a1a;
 
 $color-primary: #808055;
@@ -931,7 +932,6 @@ $breakpoints: (
 
 .yoga-section {
   display: flex;
-  background-color: #fff;
   border-radius: 28px;
   overflow: hidden;
 
@@ -940,7 +940,69 @@ $breakpoints: (
   }
 
   .yoga-image {
-    flex: 1;
+    flex: 50%;
+    position: relative;
+
+    .mem-container {
+      position: absolute;
+      background: #e9f0ec;
+      bottom: 0px;
+      right: 0px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding: 25px 0px 0px 25px;
+      border-top-left-radius: 30px;
+
+      .mem-box {
+    
+        background: $color-white;
+        bottom: 0px;
+        right: 0px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 45px 40px;
+        border-radius: 30px;
+
+        span {
+          font-weight: 500;
+        }
+
+        .heading{
+          color: $color-gray;
+          font-weight: 400;
+        }
+
+        .mem-value {
+          font-size: calc($font-size-2xl - 4px);
+          margin-bottom: 10px;
+          padding-bottom: 30px;
+          border-bottom: 1px solid $color-gray-300;
+          position: relative;
+          
+
+          &::before {
+            position: absolute;
+            content: "*";
+            font-family: "pbminfotech-base-icons";
+            font-size: $font-size-xl;
+            left: 0;
+            top: 0;
+            color: #448c73;
+          }
+          &::after {
+            position: absolute;
+            content: "+";
+            font-family: "pbminfotech-base-icons";
+            font-size: calc($font-size-xl - 12px);
+            right: 0;
+            top: -10px;
+            color: $color-black;
+          }
+        }
+      }
+    }
   }
 
   .yoga-image img {
@@ -952,7 +1014,7 @@ $breakpoints: (
   }
 
   .yoga-content {
-    flex: 1;
+    flex: 50%;
     padding: 86px 40px;
 
     h2 {

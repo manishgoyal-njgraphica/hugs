@@ -1775,7 +1775,6 @@ button {
 
 .yoga-section {
   display: flex;
-  background-color: #fff;
   border-radius: 28px;
   overflow: hidden;
 }
@@ -1785,7 +1784,61 @@ button {
   }
 }
 .yoga-section .yoga-image {
-  flex: 1;
+  flex: 50%;
+  position: relative;
+}
+.yoga-section .yoga-image .mem-container {
+  position: absolute;
+  background: #e9f0ec;
+  bottom: 0px;
+  right: 0px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 25px 0px 0px 25px;
+  border-top-left-radius: 30px;
+}
+.yoga-section .yoga-image .mem-container .mem-box {
+  background: #ffffff;
+  bottom: 0px;
+  right: 0px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 45px 40px;
+  border-radius: 30px;
+}
+.yoga-section .yoga-image .mem-container .mem-box span {
+  font-weight: 500;
+}
+.yoga-section .yoga-image .mem-container .mem-box .heading {
+  color: #8a8d8a;
+  font-weight: 400;
+}
+.yoga-section .yoga-image .mem-container .mem-box .mem-value {
+  font-size: calc(clamp(2.5rem, 4vw, 3.875rem) - 4px);
+  margin-bottom: 10px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #d7d7d7;
+  position: relative;
+}
+.yoga-section .yoga-image .mem-container .mem-box .mem-value::before {
+  position: absolute;
+  content: "*";
+  font-family: "pbminfotech-base-icons";
+  font-size: clamp(2rem, 3vw, 3rem);
+  left: 0;
+  top: 0;
+  color: #448c73;
+}
+.yoga-section .yoga-image .mem-container .mem-box .mem-value::after {
+  position: absolute;
+  content: "+";
+  font-family: "pbminfotech-base-icons";
+  font-size: calc(clamp(2rem, 3vw, 3rem) - 12px);
+  right: 0;
+  top: -10px;
+  color: #181a18;
 }
 .yoga-section .yoga-image img {
   width: 100%;
@@ -1795,7 +1848,7 @@ button {
   border-radius: 24px;
 }
 .yoga-section .yoga-content {
-  flex: 1;
+  flex: 50%;
   padding: 86px 40px;
 }
 .yoga-section .yoga-content h2 {
