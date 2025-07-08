@@ -65,10 +65,12 @@ h5,
 h6 {
   font-family: $font-family-sora;
   font-weight: 500;
+  line-height: normal;
 }
 
 h2 {
-  font-size: $font-size-xl;
+  font-weight: 500;
+  font-size: calc($font-size-xl - 6px);
 }
 p,
 span {
@@ -95,12 +97,6 @@ button {
   border: none;
 }
 // Utilities
-$breakpoints: (
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
-);
 
 @for $i from 1 through 16 {
   // Base (non-responsive)
@@ -117,21 +113,34 @@ $breakpoints: (
     padding-bottom: #{8px * $i};
   }
 
-  // Responsive versions
-  @each $bp, $bp-value in $breakpoints {
-    @media (min-width: $bp-value) {
-      .#{$bp}\:mt-#{$i} {
-        margin-top: #{6px * $i};
-      }
-      .#{$bp}\:mb-#{$i} {
-        margin-bottom: #{8px * $i};
-      }
-      .#{$bp}\:pt-#{$i} {
-        padding-top: #{6px * $i};
-      }
-      .#{$bp}\:pb-#{$i} {
-        padding-bottom: #{8px * $i};
-      }
+  @media (max-width: 1024px) {
+    .md\:mt-#{$i} {
+      margin-top: #{6px * $i} !important;
+    }
+    .md\:mb-#{$i} {
+      margin-bottom: #{8px * $i} !important;
+    }
+    .md\:pt-#{$i} {
+      padding-top: #{6px * $i} !important;
+    }
+    .md\:pb-#{$i} {
+      padding-bottom: #{8px * $i} !important;
+    }
+  }
+
+  // sm: (max-width: 768px)
+  @media (max-width: 768px) {
+    .sm\:mt-#{$i} {
+      margin-top: #{6px * $i} !important;
+    }
+    .sm\:mb-#{$i} {
+      margin-bottom: #{8px * $i} !important;
+    }
+    .sm\:pt-#{$i} {
+      padding-top: #{6px * $i} !important;
+    }
+    .sm\:pb-#{$i} {
+      padding-bottom: #{8px * $i} !important;
     }
   }
 }
@@ -210,7 +219,8 @@ $breakpoints: (
   overflow: hidden;
 
   @media (max-width: 768px) {
-    padding: 10px;
+    padding: 0px;
+    border-radius: 0px;
   }
   // Navbar
   .navbar {
@@ -560,6 +570,10 @@ $breakpoints: (
   border-radius: 30px;
   overflow: hidden;
 
+  @media (max-width: 768px) {
+    border-radius: 0px;
+  }
+
   &-image img {
     width: 100%;
     filter: brightness(80%);
@@ -723,10 +737,6 @@ $breakpoints: (
       }
     }
   }
-  h2 {
-    font-size: $font-size-2xl;
-    margin-bottom: 1.5rem;
-  }
 
   .swiper {
     width: 100%;
@@ -840,7 +850,7 @@ $breakpoints: (
         transform: translate(-15%, -10%);
 
         @media (max-width: 768px) {
-          transform: translate(8%, 0%);
+          transform: translate(-6%, 16%);
         }
 
         .button__circle {
@@ -924,13 +934,17 @@ $breakpoints: (
         background: #f5f8f6;
         padding: 55px 40px 45px;
 
+        @media (max-width: 768px) {
+          min-height: 350px;
+        }
+
         h3 {
           font-size: calc($font-size-xl - 8px);
           margin: 0.5rem 0;
         }
 
         .pose-img {
-          width: 100px;
+          width: clamp(60px, 5vw, 70px);
           align-self: flex-start;
           position: absolute;
           top: 68%;
@@ -966,6 +980,10 @@ $breakpoints: (
       padding: 25px 0px 0px 25px;
       border-top-left-radius: 30px;
 
+      @media (max-width: 768px) {
+        padding: 18px 0px 0px 18px;
+      }
+
       .mem-box {
         background: $color-white;
         bottom: 0px;
@@ -975,6 +993,11 @@ $breakpoints: (
         text-align: center;
         padding: 45px 40px;
         border-radius: 30px;
+
+        @media (max-width: 768px) {
+          padding: 18px 18px;
+          border-radius: 18px;
+        }
 
         span {
           font-weight: 500;
@@ -992,6 +1015,10 @@ $breakpoints: (
           border-bottom: 1px solid $color-gray-300;
           position: relative;
 
+          @media (max-width: 768px) {
+            padding-bottom: 12px;
+          }
+
           &::before {
             position: absolute;
             content: "*";
@@ -1000,6 +1027,9 @@ $breakpoints: (
             left: 0;
             top: 0;
             color: #448c73;
+            @media (max-width: 768px) {
+              left: 14px;
+            }
           }
           &::after {
             position: absolute;
@@ -1009,6 +1039,10 @@ $breakpoints: (
             right: 0;
             top: -10px;
             color: $color-black;
+
+            @media (max-width: 768px) {
+              right: 16px;
+            }
           }
         }
       }
@@ -1021,15 +1055,21 @@ $breakpoints: (
     display: block;
     max-height: 650px;
     border-radius: 24px;
+    height: 100%;
   }
 
   .yoga-content {
     flex: 50%;
     padding: 86px 40px;
 
+    @media (max-width: 768px) {
+      padding: 40px 0px 0px 0px;
+    }
+
     h2 {
       font-weight: 500;
       line-height: normal;
+      font-size: calc($font-size-xl - 6px);
     }
 
     .desc p {
@@ -1045,12 +1085,6 @@ $breakpoints: (
     background-color: transparent;
     font-weight: bold;
     margin-bottom: 20px;
-  }
-
-  .yoga-content h2 {
-    font-size: 40px;
-    margin-bottom: 20px;
-    line-height: 1.2;
   }
 
   .yoga-content p {
@@ -1123,11 +1157,16 @@ $breakpoints: (
     justify-content: center;
     margin-bottom: 220px;
 
+    @media (max-width: 768px) {
+      margin-bottom: 162px;
+    }
+
     .t-t-t {
-      background-image: url(../images/homepage-1/bg/yoga-pattern-new-01.png);
+      background-image: url(../images/BG\ LINES.png);
+      background-size: contain;
+      background-size: 150px;
       background-repeat: repeat;
       background-color: #e5c466;
-      background-size: cover;
     }
 
     .contact-card {
@@ -1184,8 +1223,9 @@ $breakpoints: (
   background-color: #e5c466;
 
   @media (max-width: 768px) {
-    margin-inline: 10px;
-    margin-bottom: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin: 0px;
   }
 
   .footer-top {
@@ -1205,17 +1245,21 @@ $breakpoints: (
 
     .message {
       padding-block: 14px;
-      background: #e9272a;
-      color: #fff;
+      background: $color-white;
+      color: $color-black;
       padding-inline: 26px;
       border-top-left-radius: 32px;
       border-bottom-left-radius: 4px;
       border-top-right-radius: 4px;
       border-bottom-right-radius: 32px;
+
+      @media (max-width: 768px) {
+        display: none;
+      }
     }
 
     @media (max-width: 768px) {
-      top: -140px;
+      top: -88px;
       padding-inline: 26px;
       flex-direction: column;
       align-items: flex-start;
@@ -1227,10 +1271,6 @@ $breakpoints: (
         display: flex;
         align-items: center;
         gap: 10px;
-
-        @media (max-width: 768px) {
-          padding-bottom: 20px;
-        }
       }
       .phone-icon {
         background: $color-white;
@@ -1315,6 +1355,10 @@ $breakpoints: (
         gap: 80px;
         flex-wrap: wrap;
 
+        @media (max-width: 768px) {
+          gap: 42px;
+        }
+
         div {
           h4 {
             font-size: $font-size-base;
@@ -1364,6 +1408,11 @@ $breakpoints: (
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
 
+    @media (max-width: 768px) {
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+    }
+
     .footer-left {
       a {
         color: $color-text;
@@ -1384,12 +1433,17 @@ $breakpoints: (
 // Life Style Section
 
 .lifestyle-section {
-  padding: 40px;
   background-color: #e7f0eb;
+
+  @media (max-width: 768px) {
+    padding-inline: 20px;
+    padding-block: 0px;
+  }
 
   .heading {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   .title {
@@ -1404,12 +1458,20 @@ $breakpoints: (
     flex-wrap: wrap;
     gap: 80px;
 
+    @media (max-width: 768px) {
+      gap: 44px;
+    }
+
     .tab-buttons {
       display: flex;
       flex-direction: column;
       gap: 20px;
       flex: 0.7;
       min-width: 280px;
+
+      @media (max-width: 768px) {
+        min-width: 100%;
+      }
 
       .tab-button {
         display: flex;
@@ -1418,11 +1480,16 @@ $breakpoints: (
         background-color: white;
         color: #111;
         border-radius: 40px;
-        padding: 15px 20px;
+        padding: 8px 12px;
+        padding-left: 20px;
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
         font-weight: 500;
         transition: background-color 0.3s ease;
         cursor: pointer;
+
+        .button.primary-button {
+          padding: 4px;
+        }
 
         &.active {
           background-color: #e0c05e;
@@ -1459,6 +1526,10 @@ $breakpoints: (
         flex-wrap: wrap;
         align-items: center;
         gap: 80px;
+
+        @media (max-width: 768px) {
+          gap: 46px;
+        }
 
         &.active {
           display: flex;
@@ -1518,12 +1589,23 @@ $breakpoints: (
 // CTA
 
 .cta-container {
-  background: #448c73;
+  background-color: #448c73;
+  background-image: url(../images/BG\ LINES.png);
+  background-size: 150px;
   border-radius: 30px;
   padding: 80px;
   position: relative;
   overflow: hidden;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+
+  @media (max-width: 1730px) {
+    margin-inline: 40px;
+  }
+
+  @media (max-width: 768px) {
+    padding-inline: 0px;
+    margin-inline: 20px;
+  }
 
   .cta-content {
     display: flex;
@@ -1555,7 +1637,7 @@ $breakpoints: (
   .bell-icon {
     // width: 80px;
     // height: 80px;
-    padding: 20px;
+    padding: 30px;
     background-color: #e5c466;
     border-radius: 50%;
     display: flex;
@@ -1564,8 +1646,8 @@ $breakpoints: (
     flex-shrink: 0;
 
     img {
-      width: 100px;
-      height: 100px;
+      width: 50px;
+      height: 50px;
       fill: #2d5a3d;
     }
   }
