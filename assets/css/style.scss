@@ -2080,13 +2080,22 @@ button {
   gap: 40px;
   flex-wrap: wrap;
 
+  .brand-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
   .brand-feature {
     display: flex;
     align-items: center;
+    padding: 10px;
+    background: #e5c466;
+    padding-right: 20px;
     gap: 10px;
     font-family: "Sora";
     font-weight: 300;
-    margin-bottom: 10px;
+    border-radius: 6px;
   }
 
   .branding-images {
@@ -2165,7 +2174,7 @@ button {
 
     img {
       width: 100%;
-      border-radius: 12px;
+      border-radius: 28px;
       object-fit: cover;
     }
   }

@@ -2398,13 +2398,21 @@ button {
   gap: 40px;
   flex-wrap: wrap;
 }
+.branding-section .brand-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
 .branding-section .brand-feature {
   display: flex;
   align-items: center;
+  padding: 10px;
+  background: #e5c466;
+  padding-right: 20px;
   gap: 10px;
   font-family: "Sora";
   font-weight: 300;
-  margin-bottom: 10px;
+  border-radius: 6px;
 }
 .branding-section .branding-images {
   display: grid;
@@ -2467,7 +2475,7 @@ button {
 }
 .how-it-works__left img, .how-it-works__right img {
   width: 100%;
-  border-radius: 12px;
+  border-radius: 28px;
   object-fit: cover;
 }
 .how-it-works__left {
