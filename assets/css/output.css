@@ -54,6 +54,11 @@ button {
   border: none;
 }
 
+.bg-light {
+  background-color: #e5c466;
+  background-image: url("../images/BG LINES.png");
+}
+
 .mt-1 {
   margin-top: 6px;
 }
@@ -68,6 +73,10 @@ button {
 
 .pb-1 {
   padding-bottom: 8px;
+}
+
+.py-1 {
+  padding-inline: 8px;
 }
 
 @media (max-width: 1024px) {
@@ -114,6 +123,10 @@ button {
   padding-bottom: 16px;
 }
 
+.py-2 {
+  padding-inline: 16px;
+}
+
 @media (max-width: 1024px) {
   .md\:mt-2 {
     margin-top: 12px !important;
@@ -156,6 +169,10 @@ button {
 
 .pb-3 {
   padding-bottom: 24px;
+}
+
+.py-3 {
+  padding-inline: 24px;
 }
 
 @media (max-width: 1024px) {
@@ -202,6 +219,10 @@ button {
   padding-bottom: 32px;
 }
 
+.py-4 {
+  padding-inline: 32px;
+}
+
 @media (max-width: 1024px) {
   .md\:mt-4 {
     margin-top: 24px !important;
@@ -244,6 +265,10 @@ button {
 
 .pb-5 {
   padding-bottom: 40px;
+}
+
+.py-5 {
+  padding-inline: 40px;
 }
 
 @media (max-width: 1024px) {
@@ -290,6 +315,10 @@ button {
   padding-bottom: 48px;
 }
 
+.py-6 {
+  padding-inline: 48px;
+}
+
 @media (max-width: 1024px) {
   .md\:mt-6 {
     margin-top: 36px !important;
@@ -332,6 +361,10 @@ button {
 
 .pb-7 {
   padding-bottom: 56px;
+}
+
+.py-7 {
+  padding-inline: 56px;
 }
 
 @media (max-width: 1024px) {
@@ -378,6 +411,10 @@ button {
   padding-bottom: 64px;
 }
 
+.py-8 {
+  padding-inline: 64px;
+}
+
 @media (max-width: 1024px) {
   .md\:mt-8 {
     margin-top: 48px !important;
@@ -420,6 +457,10 @@ button {
 
 .pb-9 {
   padding-bottom: 72px;
+}
+
+.py-9 {
+  padding-inline: 72px;
 }
 
 @media (max-width: 1024px) {
@@ -466,6 +507,10 @@ button {
   padding-bottom: 80px;
 }
 
+.py-10 {
+  padding-inline: 80px;
+}
+
 @media (max-width: 1024px) {
   .md\:mt-10 {
     margin-top: 60px !important;
@@ -508,6 +553,10 @@ button {
 
 .pb-11 {
   padding-bottom: 88px;
+}
+
+.py-11 {
+  padding-inline: 88px;
 }
 
 @media (max-width: 1024px) {
@@ -554,6 +603,10 @@ button {
   padding-bottom: 96px;
 }
 
+.py-12 {
+  padding-inline: 96px;
+}
+
 @media (max-width: 1024px) {
   .md\:mt-12 {
     margin-top: 72px !important;
@@ -596,6 +649,10 @@ button {
 
 .pb-13 {
   padding-bottom: 104px;
+}
+
+.py-13 {
+  padding-inline: 104px;
 }
 
 @media (max-width: 1024px) {
@@ -642,6 +699,10 @@ button {
   padding-bottom: 112px;
 }
 
+.py-14 {
+  padding-inline: 112px;
+}
+
 @media (max-width: 1024px) {
   .md\:mt-14 {
     margin-top: 84px !important;
@@ -686,6 +747,10 @@ button {
   padding-bottom: 120px;
 }
 
+.py-15 {
+  padding-inline: 120px;
+}
+
 @media (max-width: 1024px) {
   .md\:mt-15 {
     margin-top: 90px !important;
@@ -728,6 +793,10 @@ button {
 
 .pb-16 {
   padding-bottom: 128px;
+}
+
+.py-16 {
+  padding-inline: 128px;
 }
 
 @media (max-width: 1024px) {
@@ -1233,6 +1302,9 @@ button {
 .button-rotating:hover {
   transform: scale(1.05);
 }
+.button-rotating:hover .button__icon {
+  color: #000;
+}
 .button-rotating:hover .button__icon:first-child {
   transition: transform 0.3s ease-in-out;
   transform: translate(150%, -150%);
@@ -1280,6 +1352,22 @@ button {
   border-radius: 40px;
 }
 
+.services-section .card-without-link .swiper-wrapper h3 {
+  font-size: calc(clamp(1.125rem, 1.6vw, 1.5rem) + 6px) !important;
+}
+.services-section .card-without-link .swiper-wrapper button.point {
+  position: absolute;
+  bottom: 0px;
+  background: #e5c466;
+  font-size: 18px;
+  padding: 20px;
+  border-radius: 50%;
+  right: 18px;
+  font-family: "Sora";
+}
+.services-section .card-without-link .swiper-wrapper .card-content-wrapper {
+  min-height: 440px !important;
+}
 .services-section .heading-with-ctrls {
   display: flex;
   border-top: 1px solid #8a8d8a;
@@ -1587,6 +1675,24 @@ button {
 .image-with-txt .content .desc p {
   font-size: clamp(0.875rem, 1.2vw, 1rem);
   line-height: 2rem;
+}
+.image-with-txt .content ul.content-related-points {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10%;
+}
+.image-with-txt .content ul.content-related-points li.points {
+  width: 45%;
+  list-style: none;
+  margin-bottom: 20px;
+}
+.image-with-txt .content ul.content-related-points li.points h4 {
+  font-weight: 600;
+  font-size: clamp(0.875rem, 1.2vw, 1rem);
+  margin-bottom: 10px;
+}
+.image-with-txt .content ul.content-related-points li.points p {
+  font-size: clamp(0.75rem, 0.9vw, 0.875rem);
 }
 
 .contact-section .call-us {
@@ -2004,17 +2110,6 @@ button {
   overflow: hidden;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
-@media (max-width: 1730px) {
-  .cta-container {
-    margin-inline: 40px;
-  }
-}
-@media (max-width: 768px) {
-  .cta-container {
-    padding-inline: 0px;
-    margin-inline: 20px;
-  }
-}
 .cta-container .cta-content {
   display: flex;
   align-items: center;
@@ -2055,6 +2150,10 @@ button {
   width: 50px;
   height: 50px;
   fill: #2d5a3d;
+}
+.cta-container .text-content p {
+  color: #ffffff;
+  font-size: clamp(0.875rem, 1.2vw, 1rem);
 }
 .cta-container .text-content h2 {
   color: white;
@@ -2226,6 +2325,35 @@ button {
 .about-us-header .header-banner-content .header-banner-title {
   border: none;
   font-size: clamp(2.5rem, 4vw, 3.875rem);
+}
+
+.service-bg-white {
+  background: #ffffff;
+}
+
+.collage-wrapper {
+  display: flex;
+  gap: 4%;
+}
+.collage-wrapper .collage {
+  width: 48%;
+  background: #ffffff;
+  padding: 62px 68px;
+  border-radius: 30px;
+}
+.collage-wrapper .collage .collage-content h2 {
+  font-size: clamp(2rem, 3vw, 3rem);
+}
+.collage-wrapper .collage .collage-content h3 {
+  font-size: clamp(1.125rem, 1.6vw, 1.5rem);
+}
+.collage-wrapper .collage .collage-content ul {
+  list-style: none;
+}
+.collage-wrapper .collage .collage-content ul li {
+  font-family: "Sora", sans-serif;
+  line-height: 1.6rem;
+  font-size: clamp(0.75rem, 0.9vw, 0.875rem);
 }
 
 /*# sourceMappingURL=output.css.map */

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Layout</title>
+    <style>
+        *{
+            margin: 0px !important;
+            padding: 0px !important;
+        }
+      .card-wrapper {
+        display: flex;
+        gap: 20px;
+        width: 100%;
+        padding: 20px;
+        flex-wrap: wrap;
+      }
+
+      .card {
+        width: 48%;
+        background-color: #fdf6e3;
+        border-radius: 20px;
+        padding: 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      .card.green {
+        background-color: #d4f4d2;
+      }
+
+      .card h5 {
+        color: #6a6a6a;
+        font-size: 0.8rem;
+        margin: 0 0 10px;
+      }
+
+      .card h2 {
+        font-size: 1.4rem;
+        margin: 0 0 20px;
+        color: #2b2b2b;
+      }
+
+      .illustration {
+        font-size: 80px;
+        text-align: center;
+      }
+
+      @media (max-width: 600px) {
+        .card {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card-wrapper">
+      <!-- Card 1 -->
+      <div class="card green">
+        <h5>Cash Out Refinance</h5>
+        <h2>Get Rid of Your Expensive Debt</h2>
+        <div class="illustration">💰</div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card">
+        <h5>Purchase a Home</h5>
+        <h2>It's Exciting to Purchase a House</h2>
+        <div class="illustration">🏡</div>
+      </div>
+    </div>
+  </body>
+</html>

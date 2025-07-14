@@ -102,6 +102,11 @@ button {
 }
 // Utilities
 
+.bg-light {
+  background-color: #e5c466;
+  background-image: url("../images/BG\ LINES.png");
+}
+
 @for $i from 1 through 16 {
   // Base (non-responsive)
   .mt-#{$i} {
@@ -115,6 +120,10 @@ button {
   }
   .pb-#{$i} {
     padding-bottom: #{8px * $i};
+  }
+
+  .py-#{$i} {
+    padding-inline: #{8px * $i};
   }
 
   @media (max-width: 1024px) {
@@ -706,7 +715,7 @@ button {
     transform: scale(1.05);
 
     .button__icon {
-      // color: #000;
+      color: #000;
     }
 
     .button__icon:first-child {
@@ -771,7 +780,26 @@ button {
 // Swiper Section
 .services-section {
   //   padding-top: 100px;
-
+  .card-without-link {
+    .swiper-wrapper {
+      h3 {
+        font-size: calc($font-size-lg + 6px) !important;
+      }
+      button.point {
+        position: absolute;
+        bottom: 0px;
+        background: #e5c466;
+        font-size: 18px;
+        padding: 20px;
+        border-radius: 50%;
+        right: 18px;
+        font-family: "Sora";
+      }
+      .card-content-wrapper {
+        min-height: 440px !important;
+      }
+    }
+  }
   .heading-with-ctrls {
     display: flex;
     border-top: 1px solid $color-gray;
@@ -1226,6 +1254,27 @@ button {
     .desc p {
       font-size: $font-size-base;
       line-height: 2rem;
+    }
+
+    ul.content-related-points {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10%;
+      li.points {
+        width: 45%;
+        list-style: none;
+        margin-bottom: 20px;
+
+        h4 {
+          font-weight: 600;
+          font-size: calc($font-size-base);
+          margin-bottom: 10px;
+        }
+
+        p {
+          font-size: $font-size-sm;
+        }
+      }
     }
   }
 }
@@ -1700,15 +1749,6 @@ button {
   overflow: hidden;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 
-  @media (max-width: 1730px) {
-    margin-inline: 40px;
-  }
-
-  @media (max-width: 768px) {
-    padding-inline: 0px;
-    margin-inline: 20px;
-  }
-
   .cta-content {
     display: flex;
     align-items: center;
@@ -1755,6 +1795,10 @@ button {
   }
 
   .text-content {
+    p {
+      color: $color-white;
+      font-size: $font-size-base;
+    }
     h2 {
       color: white;
       font-size: $font-size-xl;
@@ -1952,4 +1996,37 @@ button {
   }
 }
 
-// Image with text
+// Service Page
+
+.service-bg-white {
+  background: $color-white;
+}
+
+.collage-wrapper {
+  display: flex;
+  gap: 4%;
+
+  .collage {
+    width: 48%;
+    background: $color-white;
+    padding: 62px 68px;
+    border-radius: 30px;
+
+    .collage-content {
+      h2 {
+        font-size: $font-size-xl;
+      }
+      h3 {
+        font-size: $font-size-lg;
+      }
+      ul {
+        list-style: none;
+        li {
+          font-family: $font-family-sora;
+          line-height: 1.6rem;
+          font-size: $font-size-sm;
+        }
+      }
+    }
+  }
+}
