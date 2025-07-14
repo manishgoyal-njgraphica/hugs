@@ -55,6 +55,7 @@ $font-family-sora: "Sora", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: $font-family-sora;
 }
 
 h1,
@@ -251,6 +252,7 @@ button {
       padding-top: 24px;
       padding-inline: 28px;
       display: flex;
+      align-items: center;
       justify-content: space-between;
     }
 
@@ -269,7 +271,6 @@ button {
       display: flex;
       list-style: none;
       gap: 2rem;
-      padding-top: 40px;
 
       .nav-link {
         text-decoration: none;
@@ -300,7 +301,6 @@ button {
       }
     }
     .nav-buttons {
-      padding-top: 22px;
       display: flex;
       align-items: center;
       height: fit-content;
@@ -2026,6 +2026,205 @@ button {
           line-height: 1.6rem;
           font-size: $font-size-sm;
         }
+      }
+    }
+  }
+}
+
+//  Branding Section
+
+.branding-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  // padding: 60px 5%;
+  gap: 40px;
+  flex-wrap: wrap;
+
+  .brand-feature {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "Sora";
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+
+  .branding-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    flex: 1;
+    max-width: 50%;
+
+    .collage {
+      gap: 3%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+
+      img {
+        height: 48.5%;
+      }
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 28px;
+      object-fit: cover;
+    }
+  }
+
+  .branding-text {
+    flex: 1;
+    max-width: 45%;
+
+    h2 {
+      font-size: calc($font-size-xl - 6px);
+    }
+
+    p {
+      font-size: $font-size-base;
+      margin-bottom: 8px;
+      max-width: 650px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+
+    .branding-images,
+    .branding-text {
+      max-width: 100%;
+    }
+
+    .branding-images {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+// Expert Consultations
+
+.how-it-works {
+  // padding: 80px 5%;
+
+  &__container {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+  &__left,
+  &__right {
+    position: sticky;
+    top: 10px;
+    flex: 1;
+    max-width: 30%;
+
+    img {
+      width: 100%;
+      border-radius: 12px;
+      object-fit: cover;
+    }
+  }
+
+  &__center {
+    flex: 2;
+    max-width: 40%;
+
+    h5 {
+      color: #f4a825;
+      font-size: 14px;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: calc($font-size-xl - 6px);
+    }
+
+    .how-it-works__steps {
+      .step {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 20px;
+        border-bottom: 1px dashed #ccc;
+        padding-bottom: 12px;
+
+        .step-number {
+          color: #e5c466;
+          font-family: $font-family-sora;
+          font-size: $font-size-base;
+          font-weight: 700;
+          margin-right: 12px;
+        }
+
+        .step-content {
+          strong {
+            font-size: $font-size-base;
+            display: block;
+            margin-bottom: 4px;
+          }
+
+          p {
+            font-size: 14px;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+
+  &__right {
+    .video-thumbnail {
+      position: relative;
+
+      img {
+        border-radius: 12px;
+        width: 100%;
+      }
+
+      .play-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #fff;
+        color: #dc3545;
+        font-size: 28px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    &__container {
+      flex-direction: column;
+    }
+
+    &__left,
+    &__center,
+    &__right {
+      max-width: 100%;
+    }
+
+    &__center {
+      text-align: center;
+
+      .step {
+        justify-content: center;
+        text-align: left;
       }
     }
   }

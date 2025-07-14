@@ -7,6 +7,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Sora", sans-serif;
 }
 
 h1,
@@ -906,6 +907,7 @@ button {
   padding-top: 24px;
   padding-inline: 28px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 .header .navbar .nav-logo .logo {
@@ -920,7 +922,6 @@ button {
   display: flex;
   list-style: none;
   gap: 2rem;
-  padding-top: 40px;
 }
 .header .navbar .nav-menu .nav-link {
   text-decoration: none;
@@ -947,7 +948,6 @@ button {
   width: 100%;
 }
 .header .navbar .nav-buttons {
-  padding-top: 22px;
   display: flex;
   align-items: center;
   height: fit-content;
@@ -2354,6 +2354,162 @@ button {
   font-family: "Sora", sans-serif;
   line-height: 1.6rem;
   font-size: clamp(0.75rem, 0.9vw, 0.875rem);
+}
+
+.branding-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.branding-section .brand-feature {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Sora";
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+.branding-section .branding-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  flex: 1;
+  max-width: 50%;
+}
+.branding-section .branding-images .collage {
+  gap: 3%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.branding-section .branding-images .collage img {
+  height: 48.5%;
+}
+.branding-section .branding-images img {
+  width: 100%;
+  height: auto;
+  border-radius: 28px;
+  object-fit: cover;
+}
+.branding-section .branding-text {
+  flex: 1;
+  max-width: 45%;
+}
+.branding-section .branding-text h2 {
+  font-size: calc(clamp(2rem, 3vw, 3rem) - 6px);
+}
+.branding-section .branding-text p {
+  font-size: clamp(0.875rem, 1.2vw, 1rem);
+  margin-bottom: 8px;
+  max-width: 650px;
+}
+@media (max-width: 768px) {
+  .branding-section {
+    flex-direction: column;
+  }
+  .branding-section .branding-images,
+  .branding-section .branding-text {
+    max-width: 100%;
+  }
+  .branding-section .branding-images {
+    grid-template-columns: 1fr;
+  }
+}
+
+.how-it-works__container {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.how-it-works__left, .how-it-works__right {
+  position: sticky;
+  top: 10px;
+  flex: 1;
+  max-width: 30%;
+}
+.how-it-works__left img, .how-it-works__right img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+.how-it-works__center {
+  flex: 2;
+  max-width: 40%;
+}
+.how-it-works__center h5 {
+  color: #f4a825;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.how-it-works__center h2 {
+  font-size: calc(clamp(2rem, 3vw, 3rem) - 6px);
+}
+.how-it-works__center .how-it-works__steps .step {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  border-bottom: 1px dashed #ccc;
+  padding-bottom: 12px;
+}
+.how-it-works__center .how-it-works__steps .step .step-number {
+  color: #e5c466;
+  font-family: "Sora", sans-serif;
+  font-size: clamp(0.875rem, 1.2vw, 1rem);
+  font-weight: 700;
+  margin-right: 12px;
+}
+.how-it-works__center .how-it-works__steps .step .step-content strong {
+  font-size: clamp(0.875rem, 1.2vw, 1rem);
+  display: block;
+  margin-bottom: 4px;
+}
+.how-it-works__center .how-it-works__steps .step .step-content p {
+  font-size: 14px;
+  margin: 0;
+}
+.how-it-works__right .video-thumbnail {
+  position: relative;
+}
+.how-it-works__right .video-thumbnail img {
+  border-radius: 12px;
+  width: 100%;
+}
+.how-it-works__right .video-thumbnail .play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  color: #dc3545;
+  font-size: 28px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+@media (max-width: 992px) {
+  .how-it-works__container {
+    flex-direction: column;
+  }
+  .how-it-works__left, .how-it-works__center, .how-it-works__right {
+    max-width: 100%;
+  }
+  .how-it-works__center {
+    text-align: center;
+  }
+  .how-it-works__center .step {
+    justify-content: center;
+    text-align: left;
+  }
 }
 
 /*# sourceMappingURL=output.css.map */
