@@ -1139,7 +1139,7 @@ button {
     justify-content: center;
   }
   .image {
-    flex: 50%;
+    flex: 45%;
     position: relative;
 
     .rotating-button-container {
@@ -1253,7 +1253,7 @@ button {
   }
 
   .content {
-    flex: 50%;
+    flex: 55%;
     padding: 86px 40px;
 
     @media (max-width: 768px) {
@@ -1261,7 +1261,28 @@ button {
     }
 
     h1 {
-      font-size: $font-size-xl;
+      font-size: $font-size-2xl;
+
+      span:nth-child(1) {
+        font-size: $font-size-2xl;
+        font-weight: 600;
+        color: #4f8690;
+      }
+      span:nth-child(2) {
+        font-size: $font-size-2xl;
+        font-weight: 600;
+        color: #f7c626;
+      }
+      span:nth-child(3) {
+        font-size: $font-size-2xl;
+        font-weight: 600;
+        color: #e82d33;
+      }
+      span:nth-child(4) {
+        font-size: $font-size-2xl;
+        font-weight: 600;
+        color: #0c6675;
+      }
     }
 
     h2 {

@@ -1563,7 +1563,7 @@ button {
   justify-content: center;
 }
 .image-with-txt .image {
-  flex: 50%;
+  flex: 45%;
   position: relative;
 }
 .image-with-txt .image .rotating-button-container {
@@ -1672,7 +1672,7 @@ button {
   }
 }
 .image-with-txt .content {
-  flex: 50%;
+  flex: 55%;
   padding: 86px 40px;
 }
 @media (max-width: 768px) {
@@ -1681,7 +1681,27 @@ button {
   }
 }
 .image-with-txt .content h1 {
-  font-size: clamp(2rem, 3vw, 3rem);
+  font-size: clamp(2.5rem, 4vw, 3.875rem);
+}
+.image-with-txt .content h1 span:nth-child(1) {
+  font-size: clamp(2.5rem, 4vw, 3.875rem);
+  font-weight: 600;
+  color: #4f8690;
+}
+.image-with-txt .content h1 span:nth-child(2) {
+  font-size: clamp(2.5rem, 4vw, 3.875rem);
+  font-weight: 600;
+  color: #f7c626;
+}
+.image-with-txt .content h1 span:nth-child(3) {
+  font-size: clamp(2.5rem, 4vw, 3.875rem);
+  font-weight: 600;
+  color: #e82d33;
+}
+.image-with-txt .content h1 span:nth-child(4) {
+  font-size: clamp(2.5rem, 4vw, 3.875rem);
+  font-weight: 600;
+  color: #0c6675;
 }
 .image-with-txt .content h2 {
   font-weight: 500;
