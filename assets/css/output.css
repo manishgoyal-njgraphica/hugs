@@ -1686,7 +1686,7 @@ button {
 .image-with-txt .content h1 span:nth-child(1) {
   font-size: clamp(2.5rem, 4vw, 3.875rem);
   font-weight: 600;
-  color: #4f8690;
+  color: #e92226;
 }
 .image-with-txt .content h1 span:nth-child(2) {
   font-size: clamp(2.5rem, 4vw, 3.875rem);
@@ -1696,7 +1696,7 @@ button {
 .image-with-txt .content h1 span:nth-child(3) {
   font-size: clamp(2.5rem, 4vw, 3.875rem);
   font-weight: 600;
-  color: #e82d33;
+  color: #2f8767;
 }
 .image-with-txt .content h1 span:nth-child(4) {
   font-size: clamp(2.5rem, 4vw, 3.875rem);
