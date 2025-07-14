@@ -1071,6 +1071,25 @@ button {
   border-radius: 28px;
   overflow: hidden;
 
+  &.contain-height {
+    height: 600px;
+
+    .image {
+      flex: 45%;
+    }
+    .content {
+      flex: 55%;
+      padding: 54px 40px;
+      overflow-y: scroll;
+      scrollbar-width: none; /* Firefox */
+      -ms-overflow-style: none; /* IE 10+ */
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+
   @media (max-width: 768px) {
     flex-direction: column;
   }
@@ -1266,8 +1285,7 @@ button {
         margin-bottom: 20px;
 
         h4 {
-          font-weight: 600;
-          font-size: calc($font-size-base);
+          font-size: calc($font-size-lg);
           margin-bottom: 10px;
         }
 
