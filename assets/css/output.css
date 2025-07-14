@@ -2387,7 +2387,8 @@ button {
 .branding-section .branding-images .collage img {
   height: 48.5%;
 }
-.branding-section .branding-images img {
+.branding-section .branding-images img,
+.branding-section .branding-images video {
   width: 100%;
   height: auto;
   border-radius: 28px;
@@ -2428,12 +2429,17 @@ button {
   position: sticky;
   top: 10px;
   flex: 1;
-  max-width: 30%;
 }
 .how-it-works__left img, .how-it-works__right img {
   width: 100%;
   border-radius: 12px;
   object-fit: cover;
+}
+.how-it-works__left {
+  max-width: 30%;
+}
+.how-it-works__right {
+  max-width: 30%;
 }
 .how-it-works__center {
   flex: 2;
@@ -2475,9 +2481,11 @@ button {
 .how-it-works__right .video-thumbnail {
   position: relative;
 }
-.how-it-works__right .video-thumbnail img {
+.how-it-works__right .video-thumbnail video {
   border-radius: 12px;
   width: 100%;
+  border-radius: 30px;
+  overflow: hidden;
 }
 .how-it-works__right .video-thumbnail .play-button {
   position: absolute;
