@@ -950,6 +950,7 @@ button {
 .header .navbar .nav-buttons {
   display: flex;
   align-items: center;
+  height: -moz-fit-content;
   height: fit-content;
   gap: 40px;
 }
@@ -963,6 +964,7 @@ button {
   background: #ffffff;
   padding: 10px;
   display: flex;
+  width: -moz-fit-content;
   width: fit-content;
   border-radius: 50%;
 }
@@ -1444,7 +1446,8 @@ button {
 }
 .services-section .swiper-slide.card .image-wrapper {
   padding: 0px;
-  clip-path: polygon(9.202% 0%, 90.798% 0%, 90.798% 0%, 92.289% 0.11%, 93.705% 0.429%, 95.025% 0.939%, 96.231% 1.622%, 97.303% 2.463%, 98.223% 3.442%, 98.972% 4.543%, 99.531% 5.748%, 99.879% 7.041%, 100% 8.403%, 100% 69.468%, 100% 69.468%, 99.633% 73.178%, 98.616% 75.937%, 97.076% 77.918%, 95.14% 79.293%, 92.934% 80.235%, 90.585% 80.917%, 88.221% 81.511%, 85.967% 82.19%, 83.95% 83.128%, 82.298% 84.496%, 82.298% 84.496%, 81.047% 86.306%, 80.14% 88.282%, 79.405% 90.341%, 78.671% 92.399%, 77.767% 94.371%, 76.523% 96.173%, 74.767% 97.721%, 72.33% 98.931%, 69.039% 99.719%, 64.724% 100%, 9.202% 100%, 9.202% 100%, 7.711% 99.89%, 6.295% 99.571%, 4.975% 99.061%, 3.769% 98.378%, 2.697% 97.538%, 1.777% 96.558%, 1.028% 95.457%, 0.469% 94.252%, 0.121% 92.959%, 0% 91.597%, 0% 8.403%, 0% 8.403%, 0.121% 7.041%, 0.469% 5.748%, 1.028% 4.543%, 1.777% 3.442%, 2.697% 2.463%, 3.769% 1.622%, 4.975% 0.939%, 6.295% 0.429%, 7.711% 0.11%, 9.202% 0%);
+  -webkit-clip-path: polygon(9.202% 0%, 90.798% 0%, 90.798% 0%, 92.289% 0.11%, 93.705% 0.429%, 95.025% 0.939%, 96.231% 1.622%, 97.303% 2.463%, 98.223% 3.442%, 98.972% 4.543%, 99.531% 5.748%, 99.879% 7.041%, 100% 8.403%, 100% 69.468%, 100% 69.468%, 99.633% 73.178%, 98.616% 75.937%, 97.076% 77.918%, 95.14% 79.293%, 92.934% 80.235%, 90.585% 80.917%, 88.221% 81.511%, 85.967% 82.19%, 83.95% 83.128%, 82.298% 84.496%, 82.298% 84.496%, 81.047% 86.306%, 80.14% 88.282%, 79.405% 90.341%, 78.671% 92.399%, 77.767% 94.371%, 76.523% 96.173%, 74.767% 97.721%, 72.33% 98.931%, 69.039% 99.719%, 64.724% 100%, 9.202% 100%, 9.202% 100%, 7.711% 99.89%, 6.295% 99.571%, 4.975% 99.061%, 3.769% 98.378%, 2.697% 97.538%, 1.777% 96.558%, 1.028% 95.457%, 0.469% 94.252%, 0.121% 92.959%, 0% 91.597%, 0% 8.403%, 0% 8.403%, 0.121% 7.041%, 0.469% 5.748%, 1.028% 4.543%, 1.777% 3.442%, 2.697% 2.463%, 3.769% 1.622%, 4.975% 0.939%, 6.295% 0.429%, 7.711% 0.11%, 9.202% 0%);
+          clip-path: polygon(9.202% 0%, 90.798% 0%, 90.798% 0%, 92.289% 0.11%, 93.705% 0.429%, 95.025% 0.939%, 96.231% 1.622%, 97.303% 2.463%, 98.223% 3.442%, 98.972% 4.543%, 99.531% 5.748%, 99.879% 7.041%, 100% 8.403%, 100% 69.468%, 100% 69.468%, 99.633% 73.178%, 98.616% 75.937%, 97.076% 77.918%, 95.14% 79.293%, 92.934% 80.235%, 90.585% 80.917%, 88.221% 81.511%, 85.967% 82.19%, 83.95% 83.128%, 82.298% 84.496%, 82.298% 84.496%, 81.047% 86.306%, 80.14% 88.282%, 79.405% 90.341%, 78.671% 92.399%, 77.767% 94.371%, 76.523% 96.173%, 74.767% 97.721%, 72.33% 98.931%, 69.039% 99.719%, 64.724% 100%, 9.202% 100%, 9.202% 100%, 7.711% 99.89%, 6.295% 99.571%, 4.975% 99.061%, 3.769% 98.378%, 2.697% 97.538%, 1.777% 96.558%, 1.028% 95.457%, 0.469% 94.252%, 0.121% 92.959%, 0% 91.597%, 0% 8.403%, 0% 8.403%, 0.121% 7.041%, 0.469% 5.748%, 1.028% 4.543%, 1.777% 3.442%, 2.697% 2.463%, 3.769% 1.622%, 4.975% 0.939%, 6.295% 0.429%, 7.711% 0.11%, 9.202% 0%);
 }
 .services-section .swiper-slide.card .image-wrapper img {
   width: 100%;
@@ -1479,7 +1482,8 @@ button {
 .services-section .swiper-slide.card .card-content-wrapper {
   min-height: 500px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.04);
-  clip-path: polygon(9.202% 0%, 90.798% 0%, 90.798% 0%, 92.289% 0.11%, 93.705% 0.429%, 95.025% 0.939%, 96.231% 1.622%, 97.303% 2.463%, 98.223% 3.442%, 98.972% 4.543%, 99.531% 5.748%, 99.879% 7.041%, 100% 8.403%, 100% 69.468%, 100% 69.468%, 99.633% 73.178%, 98.616% 75.937%, 97.076% 77.918%, 95.14% 79.293%, 92.934% 80.235%, 90.585% 80.917%, 88.221% 81.511%, 85.967% 82.19%, 83.95% 83.128%, 82.298% 84.496%, 82.298% 84.496%, 81.047% 86.306%, 80.14% 88.282%, 79.405% 90.341%, 78.671% 92.399%, 77.767% 94.371%, 76.523% 96.173%, 74.767% 97.721%, 72.33% 98.931%, 69.039% 99.719%, 64.724% 100%, 9.202% 100%, 9.202% 100%, 7.711% 99.89%, 6.295% 99.571%, 4.975% 99.061%, 3.769% 98.378%, 2.697% 97.538%, 1.777% 96.558%, 1.028% 95.457%, 0.469% 94.252%, 0.121% 92.959%, 0% 91.597%, 0% 8.403%, 0% 8.403%, 0.121% 7.041%, 0.469% 5.748%, 1.028% 4.543%, 1.777% 3.442%, 2.697% 2.463%, 3.769% 1.622%, 4.975% 0.939%, 6.295% 0.429%, 7.711% 0.11%, 9.202% 0%);
+  -webkit-clip-path: polygon(9.202% 0%, 90.798% 0%, 90.798% 0%, 92.289% 0.11%, 93.705% 0.429%, 95.025% 0.939%, 96.231% 1.622%, 97.303% 2.463%, 98.223% 3.442%, 98.972% 4.543%, 99.531% 5.748%, 99.879% 7.041%, 100% 8.403%, 100% 69.468%, 100% 69.468%, 99.633% 73.178%, 98.616% 75.937%, 97.076% 77.918%, 95.14% 79.293%, 92.934% 80.235%, 90.585% 80.917%, 88.221% 81.511%, 85.967% 82.19%, 83.95% 83.128%, 82.298% 84.496%, 82.298% 84.496%, 81.047% 86.306%, 80.14% 88.282%, 79.405% 90.341%, 78.671% 92.399%, 77.767% 94.371%, 76.523% 96.173%, 74.767% 97.721%, 72.33% 98.931%, 69.039% 99.719%, 64.724% 100%, 9.202% 100%, 9.202% 100%, 7.711% 99.89%, 6.295% 99.571%, 4.975% 99.061%, 3.769% 98.378%, 2.697% 97.538%, 1.777% 96.558%, 1.028% 95.457%, 0.469% 94.252%, 0.121% 92.959%, 0% 91.597%, 0% 8.403%, 0% 8.403%, 0.121% 7.041%, 0.469% 5.748%, 1.028% 4.543%, 1.777% 3.442%, 2.697% 2.463%, 3.769% 1.622%, 4.975% 0.939%, 6.295% 0.429%, 7.711% 0.11%, 9.202% 0%);
+          clip-path: polygon(9.202% 0%, 90.798% 0%, 90.798% 0%, 92.289% 0.11%, 93.705% 0.429%, 95.025% 0.939%, 96.231% 1.622%, 97.303% 2.463%, 98.223% 3.442%, 98.972% 4.543%, 99.531% 5.748%, 99.879% 7.041%, 100% 8.403%, 100% 69.468%, 100% 69.468%, 99.633% 73.178%, 98.616% 75.937%, 97.076% 77.918%, 95.14% 79.293%, 92.934% 80.235%, 90.585% 80.917%, 88.221% 81.511%, 85.967% 82.19%, 83.95% 83.128%, 82.298% 84.496%, 82.298% 84.496%, 81.047% 86.306%, 80.14% 88.282%, 79.405% 90.341%, 78.671% 92.399%, 77.767% 94.371%, 76.523% 96.173%, 74.767% 97.721%, 72.33% 98.931%, 69.039% 99.719%, 64.724% 100%, 9.202% 100%, 9.202% 100%, 7.711% 99.89%, 6.295% 99.571%, 4.975% 99.061%, 3.769% 98.378%, 2.697% 97.538%, 1.777% 96.558%, 1.028% 95.457%, 0.469% 94.252%, 0.121% 92.959%, 0% 91.597%, 0% 8.403%, 0% 8.403%, 0.121% 7.041%, 0.469% 5.748%, 1.028% 4.543%, 1.777% 3.442%, 2.697% 2.463%, 3.769% 1.622%, 4.975% 0.939%, 6.295% 0.429%, 7.711% 0.11%, 9.202% 0%);
   background: #f5f8f6;
   padding: 55px 40px 45px;
 }
@@ -1575,7 +1579,8 @@ button {
 }
 .image-with-txt .image img {
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: block;
   max-height: 650px;
   border-radius: 24px;
@@ -1745,6 +1750,7 @@ button {
 }
 @media (max-width: 768px) {
   .contact-section .call-us .button.primary-button {
+    width: -moz-fit-content;
     width: fit-content;
     margin-top: 16px;
   }
@@ -1801,7 +1807,8 @@ button {
   filter: brightness(80%);
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .site-footer {
@@ -1870,6 +1877,7 @@ button {
   background: #ffffff;
   padding: 10px;
   display: flex;
+  width: -moz-fit-content;
   width: fit-content;
   border-radius: 50%;
 }
@@ -2435,7 +2443,8 @@ button {
   width: 100%;
   height: auto;
   border-radius: 28px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .branding-section .branding-text {
   flex: 1;
@@ -2476,7 +2485,8 @@ button {
 .how-it-works__left img, .how-it-works__right img {
   width: 100%;
   border-radius: 28px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .how-it-works__left {
   max-width: 30%;
@@ -2565,171 +2575,10 @@ button {
 
 .contact-section .contact-form-wrapper {
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  margin-top: 40px;
-  gap: 40px;
-  margin-bottom: 220px;
-}
-@media (max-width: 991px) {
-  .contact-section .contact-form-wrapper {
-    grid-template-columns: 1fr;
-  }
+  grid-template-columns: 1fr 1fr;
+  padding-left: 40px; /* ← too much space */
+  padding-right: 20px;
 }
 .contact-section .contact-form-wrapper .contact-form {
   background-color: #fff;
-  padding: 55px 40px;
-  border-radius: 25px;
-}
-.contact-section .contact-form-wrapper .contact-form h1 {
-  font-size: clamp(1rem, 2vw, 2rem);
-}
-.contact-section .contact-form-wrapper .contact-form .form-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-@media (max-width: 767px) {
-  .contact-section .contact-form-wrapper .contact-form .form-row {
-    flex-direction: column;
-    gap: 1rem;
-  }
-}
-.contact-section .contact-form-wrapper .contact-form .form-row .form-group {
-  flex: 1;
-}
-.contact-section .contact-form-wrapper .contact-form .form-row .form-group .form-control, .contact-section .contact-form-wrapper .contact-form .form-row .form-group .form-select {
-  margin-bottom: 20px;
-  font-size: clamp(0.8125rem, 1.2vw, 0.875rem);
-  height: 55px;
-  width: 100%;
-  padding: 0 10px;
-  font-weight: 600;
-  border-width: 0 0 1px 0;
-  border-bottom: 1px solid rgba(24, 26, 23, 0.8);
-  color: #818181;
-}
-.contact-section .contact-form-wrapper .contact-form .form-row .form-group .form-control:focus-visible, .contact-section .contact-form-wrapper .contact-form .form-row .form-group .form-select:focus-visible {
-  outline: 0;
-}
-.contact-section .contact-form-wrapper .contact-form .contact-btn {
-  background-color: #448c73;
-  color: #fff;
-}
-.contact-section .contact-form-wrapper .contact-form .contact-btn .button__circle {
-  background-color: #448c73;
-}
-.contact-section .contact-form-wrapper .contact-right-wrapper {
-  position: relative;
-}
-.contact-section .contact-form-wrapper .contact-right-wrapper .contact-other-detail {
-  min-height: 515px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.04);
-  clip-path: polygon(9.202% 0%, 90.798% 0%, 90.798% 0%, 92.289% 0.11%, 93.705% 0.429%, 95.025% 0.939%, 96.231% 1.622%, 97.303% 2.463%, 98.223% 3.442%, 98.972% 4.543%, 99.531% 5.748%, 99.879% 7.041%, 100% 8.403%, 100% 69.468%, 100% 69.468%, 99.633% 73.178%, 98.616% 75.937%, 97.076% 77.918%, 95.14% 79.293%, 92.934% 80.235%, 90.585% 80.917%, 88.221% 81.511%, 85.967% 82.19%, 83.95% 83.128%, 82.298% 84.496%, 82.298% 84.496%, 81.047% 86.306%, 80.14% 88.282%, 79.405% 90.341%, 78.671% 92.399%, 77.767% 94.371%, 76.523% 96.173%, 74.767% 97.721%, 72.33% 98.931%, 69.039% 99.719%, 64.724% 100%, 9.202% 100%, 9.202% 100%, 7.711% 99.89%, 6.295% 99.571%, 4.975% 99.061%, 3.769% 98.378%, 2.697% 97.538%, 1.777% 96.558%, 1.028% 95.457%, 0.469% 94.252%, 0.121% 92.959%, 0% 91.597%, 0% 8.403%, 0% 8.403%, 0.121% 7.041%, 0.469% 5.748%, 1.028% 4.543%, 1.777% 3.442%, 2.697% 2.463%, 3.769% 1.622%, 4.975% 0.939%, 6.295% 0.429%, 7.711% 0.11%, 9.202% 0%);
-  background-color: #448c73;
-  background-image: url("../images/BG LINES.png");
-  padding: 55px 40px 45px;
-}
-.contact-section .contact-form-wrapper .contact-right-wrapper .contact-other-detail h3 {
-  font-size: clamp(1rem, 2vw, 2rem);
-  color: #e5c466;
-}
-.contact-section .contact-form-wrapper .contact-right-wrapper .contact-other-detail .detail-wrapper {
-  display: flex;
-  align-items: self-start;
-  gap: 10px;
-  margin-top: 20px;
-}
-.contact-section .contact-form-wrapper .contact-right-wrapper .contact-other-detail .detail-wrapper .detail-img-wrapper {
-  background: #fff;
-  padding: 8px;
-  border-radius: 50px;
-  display: flex;
-}
-.contact-section .contact-form-wrapper .contact-right-wrapper .contact-other-detail .detail-wrapper .detail-img-wrapper img {
-  width: 25px;
-}
-.contact-section .contact-form-wrapper .contact-right-wrapper .contact-other-detail .detail-wrapper span {
-  color: #fff;
-}
-.contact-section .contact-form-wrapper .contact-right-wrapper .contact-other-detail .email-detail {
-  align-items: center;
-}
-.contact-section .contact-form-wrapper .contact-right-wrapper .contact-other-detail .location-detail {
-  margin-top: 25px;
-}
-.contact-section .contact-form-wrapper .contact-right-wrapper .share-btn-wrapper {
-  position: absolute;
-  right: 50px;
-  bottom: 30px;
-}
-@media (max-width: 565px) {
-  .contact-section .contact-form-wrapper .contact-right-wrapper .share-btn-wrapper {
-    right: 10px;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .contact-section .contact-form-wrapper .contact-right-wrapper .share-btn-wrapper {
-    right: 70px;
-  }
-}
-@media (min-width: 992px) and (max-width: 1400px) {
-  .contact-section .contact-form-wrapper .contact-right-wrapper .share-btn-wrapper {
-    right: 5px;
-  }
-}
-.contact-section .contact-form-wrapper .contact-right-wrapper .share-btn-wrapper .share-btn-bg {
-  background: #fff;
-  padding: 13px;
-  border-radius: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.contact-section .contact-form-wrapper .contact-right-wrapper .share-btn-wrapper .share-btn-bg img {
-  width: 25px;
-  transition: all 0.4s ease-in-out;
-}
-.contact-section .contact-form-wrapper .contact-right-wrapper .share-btn-wrapper .social-link-wrapper {
-  display: flex;
-  list-style: none;
-  position: absolute;
-  right: 0px;
-  bottom: 5px;
-  transform: translate(-40px, 0);
-  opacity: 0;
-  transition: all 0.3s ease-in;
-}
-.contact-section .contact-form-wrapper .contact-right-wrapper .share-btn-wrapper .social-link-wrapper li {
-  margin-right: 10px;
-}
-.contact-section .contact-form-wrapper .contact-right-wrapper .share-btn-wrapper .social-link-wrapper li a {
-  background: #fff;
-  padding: 13px;
-  border-radius: 50px;
-  width: 36px;
-  height: 36px;
-  display: flex;
-  align-items: center;
-  color: #000;
-  justify-content: center;
-}
-.contact-section .contact-form-wrapper .contact-right-wrapper .share-btn-wrapper .social-link-wrapper li:hover a {
-  background-color: #808055;
-}
-.contact-section .contact-form-wrapper .contact-right-wrapper .share-btn-wrapper .social-link-wrapper li:hover a i {
-  color: #fff;
-}
-.contact-section .contact-form-wrapper .contact-right-wrapper .share-btn-wrapper:hover .social-link-wrapper {
-  transform: translate(-75px, 0);
-  opacity: 1;
-}
-.contact-section .contact-form-wrapper .contact-right-wrapper .share-btn-wrapper:hover .share-btn-bg {
-  background-color: #e5c466;
-}
-.contact-section .contact-form-wrapper .contact-right-wrapper .share-btn-wrapper:hover .share-btn-bg img {
-  transform: rotate(180deg);
-}
-
-/*# sourceMappingURL=output.css.map */
+}/*# sourceMappingURL=style.css.map */
