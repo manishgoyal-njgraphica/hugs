@@ -1,4 +1,4 @@
-@charset "UTF-8";
+  @charset "UTF-8";
 body {
   background: #e9f0ec;
 }
@@ -1508,6 +1508,7 @@ button {
   border-radius: 28px;
   overflow: hidden;
 }
+ 
 .image-with-txt.contain-height {
   height: 600px;
 }

@@ -33,3 +33,20 @@ const swipperLayoutThree = new Swiper(".swipper-layout-three", {
     prevEl: ".button-prev",
   },
 });
+
+const swipperLayoutTwo = new Swiper(".swipper-layout-two", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 2,
+    },
+  },
+  navigation: {
+    nextEl: ".button-next",
+    prevEl: ".button-prev",
+  },
+});

@@ -1569,6 +1569,22 @@ button {
   border-radius: 28px;
   overflow: hidden;
 }
+.image-with-txt.slider-layout {
+  gap: 48px;
+  align-items: center;
+}
+.image-with-txt .services-section {
+  width: 55%;
+}
+.image-with-txt .services-section .swiper {
+  padding-bottom: 0px;
+}
+.image-with-txt .services-section .heading-with-ctrls {
+  border-top: none;
+}
+.image-with-txt .services-section .content {
+  padding: 0px;
+}
 .image-with-txt.contain-height {
   height: 600px;
 }
@@ -2493,7 +2509,7 @@ button {
   flex-direction: column;
 }
 .branding-section .branding-images .collage img {
-  height: 48.5%;
+  height: 42.8%;
 }
 .branding-section .branding-images img,
 .branding-section .branding-images video {
@@ -2524,6 +2540,7 @@ button {
   }
   .branding-section .branding-images {
     grid-template-columns: 1fr;
+    height: 100%;
   }
 }
 

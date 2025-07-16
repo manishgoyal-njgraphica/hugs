@@ -1150,6 +1150,25 @@ button {
   border-radius: 28px;
   overflow: hidden;
 
+  &.slider-layout{
+    gap:48px;
+    align-items: center;
+  }
+
+  .services-section {
+    width: 55%;
+
+    .swiper{
+      padding-bottom: 0px;
+    }
+    .heading-with-ctrls {
+      border-top: none;
+    }
+    .content {
+      padding: 0px;
+    }
+  }
+
   &.contain-height {
     height: 600px;
 
@@ -2191,7 +2210,7 @@ button {
       flex-direction: column;
 
       img {
-        height: 48.5%;
+        height: 42.8%;
       }
     }
 
@@ -2229,6 +2248,7 @@ button {
 
     .branding-images {
       grid-template-columns: 1fr;
+      height:100%;
     }
   }
 }
@@ -2594,7 +2614,6 @@ button {
   }
 }
 
-
 // faq section
 .faq-section {
   h2 {
@@ -2617,7 +2636,7 @@ button {
         padding: 20px;
         border-radius: 20px;
         color: #000;
-        font-size: clamp(.9rem, 1.6vw, 1.2rem);
+        font-size: clamp(0.9rem, 1.6vw, 1.2rem);
 
         .arrow {
           transition: transform 0.3s ease;
@@ -2634,7 +2653,7 @@ button {
       }
 
       &.active {
-        .faq-question{
+        .faq-question {
           background: #448c73;
           color: #fff;
         }
@@ -2650,3 +2669,7 @@ button {
     }
   }
 }
+
+
+// For Parents
+
