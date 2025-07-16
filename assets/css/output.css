@@ -1548,10 +1548,10 @@ button {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 .image-overlap-section .image-content .primary-img {
-  transform: translate(4%, -28%);
+  transform: translate(4%, -20%);
 }
 .image-overlap-section .image-content .secondary-img {
-  transform: translate(-4%, 28%);
+  transform: translate(-4%, 20%);
 }
 @media screen and (max-width: 768px) {
   .image-overlap-section {
@@ -2858,6 +2858,56 @@ button {
 }
 .faq-section .faq-wrapper .faq.active .arrow {
   transform: rotate(0deg);
+}
+
+.reviews-section .card-content-wrapper {
+  min-height: auto !important;
+  clip-path: polygon(6.726% 100%, 93.274% 100%, 93.274% 100%, 94.364% 99.896%, 95.399% 99.594%, 96.364% 99.111%, 97.245% 98.464%, 98.029% 97.668%, 98.701% 96.741%, 99.249% 95.698%, 99.657% 94.556%, 99.912% 93.332%, 100% 92.042%, 100% 28.912%, 100% 28.912%, 99.732% 25.399%, 98.988% 22.786%, 97.863% 20.91%, 96.447% 19.608%, 94.835% 18.717%, 93.119% 18.071%, 91.39% 17.508%, 89.742% 16.865%, 88.268% 15.977%, 87.061% 14.682%, 87.061% 14.682%, 86.147% 12.968%, 85.483% 11.096%, 84.946% 9.146%, 84.409% 7.198%, 83.749% 5.331%, 82.839% 3.624%, 81.556% 2.158%, 79.775% 1.012%, 77.369% 0.266%, 74.215% 0%, 6.726% 0%, 6.726% 0%, 5.636% 0.104%, 4.601% 0.406%, 3.636% 0.889%, 2.755% 1.536%, 1.971% 2.332%, 1.299% 3.259%, 0.751% 4.302%, 0.343% 5.444%, 0.088% 6.668%, 0% 7.958%, 0% 92.042%, 0% 92.042%, 0.088% 93.332%, 0.343% 94.556%, 0.751% 95.698%, 1.299% 96.741%, 1.971% 97.668%, 2.755% 98.464%, 3.636% 99.111%, 4.601% 99.594%, 5.636% 99.896%, 6.726% 100%) !important;
+}
+.reviews-section .quote-btn {
+  position: absolute;
+  border-radius: 50%;
+  width: 54px;
+  height: 54px;
+  right: 0px;
+  top: 0px;
+  background-color: #448c73;
+}
+.reviews-section .quote-btn .quote {
+  font-size: 22px;
+  color: #fff;
+}
+.reviews-section .fa-star {
+  color: #fdcf00;
+}
+.reviews-section p.comment {
+  color: #8a8d8a;
+  font-size: calc(clamp(0.875rem, 1.2vw, 1rem) + 2px);
+  line-height: 1.8rem;
+}
+.reviews-section .user-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #f8fbfa;
+  max-width: 300px;
+}
+.reviews-section .user-info .profile-img {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.reviews-section .user-info .text-info h4 {
+  margin: 0;
+  font-size: 16px;
+}
+.reviews-section .user-info .text-info p {
+  margin: 0;
+  font-size: 12px;
+  color: #8a8d8a;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 /*# sourceMappingURL=output.css.map */
