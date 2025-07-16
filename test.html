@@ -3,269 +3,123 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Digital Branding Section</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <title>Affiliate Section</title>
     <style>
-      body {
-        font-family: "Inter", sans-serif;
-        margin: 0;
-        padding: 0;
+      .image-overlap-section {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 60px 40px;
         background-color: #fff;
       }
 
-      .branding-section {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 60px 5%;
-        gap: 40px;
-        flex-wrap: wrap;
+      .text-content {
+        flex: 1 1 400px;
+        max-width: 500px;
+        padding: 20px;
       }
 
-      .branding-images {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 16px;
-        flex: 1;
-        max-width: 50%;
+      .text-content h4 {
+        letter-spacing: 2px;
+        font-size: 12px;
+        color: #444;
+        margin-bottom: 10px;
       }
 
-      .branding-images img {
+      .text-content h2 {
+        font-size: 28px;
+        font-weight: 600;
+        margin: 0 0 20px;
+        color: #222;
+      }
+
+      .text-content p {
+        color: #000;
+      }
+
+      .text-content a.button {
+        display: inline-block;
+        background-color: #eed275;
+        color: #000;
+        text-decoration: none;
+        padding: 14px 24px;
+        font-weight: 500;
+        border: none;
+        letter-spacing: 1px;
+      }
+
+      .image-content {
+        flex: 1 1 400px;
+        position: relative;
+        padding: 20px;
+      }
+
+      .main-img {
         width: 100%;
-        height: auto;
-        border-radius: 12px;
-        object-fit: cover;
+        border-radius: 8px;
+        max-width: 400px;
       }
 
-      .branding-text {
-        flex: 1;
-        max-width: 45%;
+      .overlay-img {
+        position: absolute;
+        top: 50px;
+        left: 30px;
+        width: 150px;
+        border: 4px solid #fff;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
       }
 
-      .branding-text h5 {
-        color: #f4a825;
-        text-transform: uppercase;
-        font-size: 14px;
-        font-weight: 600;
-        margin-bottom: 8px;
-      }
-
-      .branding-text h2 {
-        font-size: 32px;
-        font-weight: 700;
-        margin-bottom: 16px;
-        color: #0b162c;
-      }
-
-      .branding-text p {
-        color: #5a5a5a;
-        font-size: 16px;
-        line-height: 1.6;
-        margin-bottom: 24px;
-      }
-
-      .branding-feature {
-        display: flex;
-        align-items: flex-start;
-        margin-bottom: 16px;
-      }
-
-      .branding-feature-icon {
-        font-size: 24px;
-        color: #f4a825;
-        margin-right: 12px;
-      }
-
-      .branding-feature-text {
-        color: #0b162c;
-      }
-
-      .branding-feature-text strong {
-        display: block;
-        font-size: 16px;
-        font-weight: 600;
-        margin-bottom: 4px;
-      }
-
-      @media (max-width: 768px) {
-        .branding-section {
+      @media screen and (max-width: 768px) {
+        .affiliate-section {
           flex-direction: column;
         }
 
-        .branding-images,
-        .branding-text {
-          max-width: 100%;
-        }
-
-        .branding-images {
-          grid-template-columns: 1fr;
+        .overlay-img {
+          position: static;
+          display: block;
+          margin: 20px auto 0;
         }
       }
     </style>
   </head>
   <body>
-    <section class="branding-section">
-      <div class="branding-images">
-        <div>
-          <img src="./assets/images/01.png" alt="Team meeting with charts" />
-
-          <img
-            src="./assets/images/01.png"
-            alt="Woman on laptop with play button"
-          />
-        </div>
-
-        <img src="./assets/images/3.jpg" alt="Strategic planning" />
-      </div>
-      <div class="branding-text">
-        <h5>Expertise in Action</h5>
-        <h2>Elevate Your Brand In The Digital Landscape.</h2>
+    <section class="image-overlap-section">
+      <div class="text-content">
+        <h2>Everything Under One Roof</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-          tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          At HUGS, we understand how overwhelming it can be to juggle multiple
+          appointments at different clinics. It’s such a challenge to have one
+          for speech therapy, another for occupational support, and yet another
+          for a doctor’s consultation. That’s why we’ve brought it all together.
         </p>
+        <br />
+        <p>
+          From counseling to therapy to medical guidance, everything your child
+          needs is available in one comforting space.
+        </p>
+        <br />
+        <p>
+          We’re open on weekends and all weekdays (except Fridays), making it
+          easier for working parents to find the support they need, without the
+          added stress of running around.
+        </p>
+        <br />
+        Because your child’s care should feel simple, not scattered.
+      </div>
 
-        <div class="branding-feature">
-          <div class="branding-feature-icon">💡</div>
-          <div class="branding-feature-text">
-            <strong>Strategic Planning</strong>
-            <span
-              >Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span
-            >
-          </div>
-        </div>
-
-        <div class="branding-feature">
-          <div class="branding-feature-icon">📊</div>
-          <div class="branding-feature-text">
-            <strong>Execution Projects</strong>
-            <span
-              >Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span
-            >
-          </div>
-        </div>
+      <div class="image-content">
+        <img
+          src="./assets/images/One Team One SPace.png"
+          alt="Model"
+          class="main-img"
+        />
+        <img
+          src="./assets/images/One Team One SPace.png"
+          alt="Model"
+          class="main-img"
+        />
       </div>
     </section>
   </body>
 </html>
-
-
-
-
-
-
-
-<div class="collage-wrapper layout-full">
-  <!-- Card 1 -->
-  <div class="collage">
-    <div class="collage-content">
-      <h2 class="mb-2">
-        Developmental <br />
-        Assessments
-      </h2>
-      <h3 class="mb-1">
-        Clarity brings comfort. Early understanding creates stronger
-        outcomes.
-      </h3>
-
-      <p>
-        Not sure what your child needs? That’s okay. You’re not supposed to
-        know everything.
-      </p>
-
-      <p>
-        Our team offers <strong>multidisciplinary assessments</strong> to
-        help you understand your child’s developmental profile with warmth
-        and precision. These assessments are gentle, age-appropriate, and
-        designed to bring insight, not labels.
-      </p>
-
-      <h3 class="mt-2 mb-1">We assess:</h3>
-      <ul>
-        <li>Cognitive skills</li>
-        <li>Language abilities</li>
-        <li>Emotional regulation</li>
-        <li>Motor development</li>
-        <li>Sensory processing</li>
-        <li>Behavioural functioning</li>
-      </ul>
-
-      <p class="mt-2">
-        After the assessment, we offer a clear explanation, supportive
-        feedback, and a roadmap for what comes next — whether that’s
-        therapy, home strategies, or just some monitored waiting.
-      </p>
-
-      <p class="mt-2">
-        You’ll never leave confused, judged, or overwhelmed.
-      </p>
-    </div>
-  </div>
-
-  <!-- Card 2 -->
-  <div class="collage">
-    <div class="collage-content">
-      <h2 class="mb-2">
-        Expert <br />
-        Consultations
-      </h2>
-      <h3 class="mb-1">
-        When the path gets unclear, we bring in the right guide.
-      </h3>
-
-      <p>
-        Sometimes, you may need a deeper opinion or medical perspective
-        before taking your next step. We offer in-house and referred
-        consultations with:
-      </p>
-
-      <ul class="mt-3 mb-3">
-        <li class="flex mb-1">
-          <span><b>Pediatricians</b></span>
-          <p>
-            To rule out or confirm any underlying medical concerns that may
-            be affecting development.
-          </p>
-        </li>
-        <li class="flex mb-1">
-          <span><b>Pediatric Neurologists</b></span>
-          <p>
-            For more complex neurological questions, like seizures, delays,
-            or sensory issues that don’t have a clear cause.
-          </p>
-        </li>
-        <li class="flex">
-          <span><b>Child Psychologists</b></span>
-          <p>
-            For emotional or behavioural assessments, anxiety, mood
-            concerns, or school-related stress.
-          </p>
-        </li>
-      </ul>
-
-      <p class="mt-2">
-        We help facilitate these conversations with care and clarity,
-        ensuring you're never left alone to navigate your child’s needs.
-      </p>
-
-      <h3 class="mt-2 mb-1">And above all... we offer this:</h3>
-
-      <ul>
-        <li>A safe space to ask questions you’ve been afraid to Google</li>
-        <li>A warm voice when your inner voice feels unsure</li>
-        <li>
-          A reminder that needing help doesn't mean you're failing, it means
-          you're showing up
-        </li>
-      </ul>
-      <p class="mt-2">
-        At HUGS, you’re not a ‘case.’ You’re a parent. A caregiver. A human.
-        And your child is not a ‘delay.’ They’re a full, beautiful
-        work-in-progress.
-      </p>
-    </div>
-  </div>
-</div>

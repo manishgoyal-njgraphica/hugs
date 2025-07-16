@@ -1499,6 +1499,71 @@ button {
   top: 68%;
 }
 
+.image-overlap-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.image-overlap-section .text-content {
+  flex: 1 1;
+}
+.image-overlap-section .text-content h4 {
+  letter-spacing: 2px;
+  font-size: 12px;
+  color: #444;
+  margin-bottom: 10px;
+}
+.image-overlap-section .text-content h2 {
+  font-size: clamp(2rem, 3vw, 3rem);
+}
+.image-overlap-section .text-content p {
+  font-size: clamp(0.875rem, 1.2vw, 1rem);
+  max-width: 650px;
+}
+.image-overlap-section .text-content a.button {
+  display: inline-block;
+  background-color: #eed275;
+  color: #000;
+  text-decoration: none;
+  padding: 14px 24px;
+  font-weight: 500;
+  border: none;
+  letter-spacing: 1px;
+}
+.image-overlap-section .image-content {
+  flex: 1;
+  position: relative;
+}
+.image-overlap-section .image-content .main-img {
+  width: 48%;
+  border-radius: 8px;
+}
+.image-overlap-section .image-content .overlay-img {
+  position: absolute;
+  top: 50px;
+  left: 30px;
+  width: 150px;
+  border: 4px solid #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.image-overlap-section .image-content .primary-img {
+  transform: translate(4%, -28%);
+}
+.image-overlap-section .image-content .secondary-img {
+  transform: translate(-4%, 28%);
+}
+@media screen and (max-width: 768px) {
+  .image-overlap-section {
+    flex-direction: column;
+  }
+  .image-overlap-section .image-content .overlay-img {
+    position: static;
+    display: block;
+    margin: 20px auto 0;
+  }
+}
+
 .image-with-txt {
   display: flex;
   border-radius: 28px;
@@ -2599,7 +2664,8 @@ button {
 .contact-section .contact-form-wrapper .contact-form .form-row .form-group {
   flex: 1;
 }
-.contact-section .contact-form-wrapper .contact-form .form-row .form-group .form-control, .contact-section .contact-form-wrapper .contact-form .form-row .form-group .form-select {
+.contact-section .contact-form-wrapper .contact-form .form-row .form-group .form-control,
+.contact-section .contact-form-wrapper .contact-form .form-row .form-group .form-select {
   margin-bottom: 20px;
   font-size: clamp(0.8125rem, 1.2vw, 0.875rem);
   height: 55px;
@@ -2610,7 +2676,8 @@ button {
   border-bottom: 1px solid rgba(24, 26, 23, 0.8);
   color: #818181;
 }
-.contact-section .contact-form-wrapper .contact-form .form-row .form-group .form-control:focus-visible, .contact-section .contact-form-wrapper .contact-form .form-row .form-group .form-select:focus-visible {
+.contact-section .contact-form-wrapper .contact-form .form-row .form-group .form-control:focus-visible,
+.contact-section .contact-form-wrapper .contact-form .form-row .form-group .form-select:focus-visible {
   outline: 0;
 }
 .contact-section .contact-form-wrapper .contact-form .contact-btn {
