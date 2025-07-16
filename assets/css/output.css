@@ -2695,7 +2695,6 @@ button {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.04);
   clip-path: polygon(9.202% 0%, 90.798% 0%, 90.798% 0%, 92.289% 0.11%, 93.705% 0.429%, 95.025% 0.939%, 96.231% 1.622%, 97.303% 2.463%, 98.223% 3.442%, 98.972% 4.543%, 99.531% 5.748%, 99.879% 7.041%, 100% 8.403%, 100% 69.468%, 100% 69.468%, 99.633% 73.178%, 98.616% 75.937%, 97.076% 77.918%, 95.14% 79.293%, 92.934% 80.235%, 90.585% 80.917%, 88.221% 81.511%, 85.967% 82.19%, 83.95% 83.128%, 82.298% 84.496%, 82.298% 84.496%, 81.047% 86.306%, 80.14% 88.282%, 79.405% 90.341%, 78.671% 92.399%, 77.767% 94.371%, 76.523% 96.173%, 74.767% 97.721%, 72.33% 98.931%, 69.039% 99.719%, 64.724% 100%, 9.202% 100%, 9.202% 100%, 7.711% 99.89%, 6.295% 99.571%, 4.975% 99.061%, 3.769% 98.378%, 2.697% 97.538%, 1.777% 96.558%, 1.028% 95.457%, 0.469% 94.252%, 0.121% 92.959%, 0% 91.597%, 0% 8.403%, 0% 8.403%, 0.121% 7.041%, 0.469% 5.748%, 1.028% 4.543%, 1.777% 3.442%, 2.697% 2.463%, 3.769% 1.622%, 4.975% 0.939%, 6.295% 0.429%, 7.711% 0.11%, 9.202% 0%);
   background-color: #448c73;
-  background-image: url("../images/BG LINES.png");
   padding: 55px 40px 45px;
 }
 .contact-section .contact-form-wrapper .contact-right-wrapper .contact-other-detail h3 {
@@ -2797,6 +2796,51 @@ button {
 }
 .contact-section .contact-form-wrapper .contact-right-wrapper .share-btn-wrapper:hover .share-btn-bg img {
   transform: rotate(180deg);
+}
+
+.faq-section h2 {
+  text-align: center;
+}
+.faq-section .faq-wrapper {
+  margin-bottom: 220px;
+  margin-top: 40px;
+}
+.faq-section .faq-wrapper .faq {
+  padding: 15px 0;
+}
+.faq-section .faq-wrapper .faq .faq-question {
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  color: #000;
+  font-size: clamp(0.9rem, 1.6vw, 1.2rem);
+}
+.faq-section .faq-wrapper .faq .faq-question .arrow {
+  transition: transform 0.3s ease;
+  transform: rotate(180deg);
+}
+.faq-section .faq-wrapper .faq .faq-answer {
+  max-height: 0;
+  padding: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+  color: #333;
+}
+.faq-section .faq-wrapper .faq.active .faq-question {
+  background: #448c73;
+  color: #fff;
+}
+.faq-section .faq-wrapper .faq.active .faq-answer {
+  max-height: 300px;
+  padding: 20px 20px 0;
+}
+.faq-section .faq-wrapper .faq.active .arrow {
+  transform: rotate(0deg);
 }
 
 /*# sourceMappingURL=output.css.map */

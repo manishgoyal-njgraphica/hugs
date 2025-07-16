@@ -185,173 +185,117 @@
       </div>
     </header>
 
-    <section class="contact-section container mt-16 md:mt-12">
-        <h2 class="mb-2">Contact Us</h2>
-        <!-- <p>There are many variations of passages of Lorem Ipsum available, but the in some form, or randomised words which don't look even.</p> -->
-        <div class="contact-form-wrapper">
-            <div class="contact-form">
-                <form action="">
-                    <h1>Send a message</h1>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Your Name*">
-                        </div>
-                            <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Your Email*">
-                        </div>
-                    </div>
+    <section class="faq-section container mt-16 md:mt-12">
+        <h2 class="mb-2">FAQs for Concerned Parents</h2>
 
-                    <div class="form-row">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Your Phone*">
-                        </div>
-                        <div class="form-group">
-                            <select name="" class="form-select" id="">
-                                <option value="">Select Service</option>
-                                <option value="speech-therapy">Speech Therapy</option>
-                                <option value="occupational-therapy">Occupational Therapy</option>
-                                <option value="behavioural-therapy">Behavioural Therapy</option>
-                                <option value="development-assessments">Developmental Assessments</option>
-                                <option value="expert-consultations">Expert Consultations</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="form-row">
-                        <div class="form-group">
-                            <textarea name="" class="form-control" id="" placeholder="Additional Information"></textarea>
-                        </div>
-                    </div>
-
-                    <button class="button primary-button contact-btn">
-                        SUBMIT NOW
-                        <div class="button__circle">
-                            <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            id="Layer_1"
-                            data-name="Layer 1"
-                            viewBox="0 0 1402.53 1457.81"
-                            class="button__icon"
-                            >
-                            <defs>
-                                <style>
-                                .cls-1 {
-                                    fill: none;
-                                    stroke: #fff;
-                                    stroke-miterlimit: 10;
-                                    stroke-width: 90.41px;
-                                }
-                                </style>
-                            </defs>
-                            <line
-                                class="cls-1"
-                                x1="39.75"
-                                y1="1420.36"
-                                x2="1376.18"
-                                y2="40.2"
-                            />
-                            <path
-                                class="cls-1"
-                                d="M53.72,61.46c59.41,50.9,296.13,241.65,652.42,240.56,369.81-1.13,611.09-208.15,667-258.78"
-                            />
-                            <path
-                                class="cls-1"
-                                d="M1356.99,1360.99c-50.9-59.41-241.65-296.13-240.56-652.42,1.13-369.81,208.15-611.09,258.78-667"
-                            />
-                            <!-- Code injected by live-server -->
-                            </svg>
-
-                            <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            id="Layer_1"
-                            class="button__icon button__icon--copy"
-                            data-name="Layer 1"
-                            viewBox="0 0 1402.53 1457.81"
-                            class="button__icon"
-                            >
-                            <defs>
-                                <style>
-                                .cls-1 {
-                                    fill: none;
-                                    stroke: #fff;
-                                    stroke-miterlimit: 10;
-                                    stroke-width: 90.41px;
-                                }
-                                </style>
-                            </defs>
-                            <line
-                                class="cls-1"
-                                x1="39.75"
-                                y1="1420.36"
-                                x2="1376.18"
-                                y2="40.2"
-                            />
-                            <path
-                                class="cls-1"
-                                d="M53.72,61.46c59.41,50.9,296.13,241.65,652.42,240.56,369.81-1.13,611.09-208.15,667-258.78"
-                            />
-                            <path
-                                class="cls-1"
-                                d="M1356.99,1360.99c-50.9-59.41-241.65-296.13-240.56-652.42,1.13-369.81,208.15-611.09,258.78-667"
-                            />
-                            <!-- Code injected by live-server -->
-                            </svg>
-                        </div>
-                    </button>
-                </form>
-            </div>
-            <div class="contact-right-wrapper">
-                <div class="contact-other-detail">
-                    <h3>More ways to connect</h3>
-                    <div class="detail-wrapper phone-detail">
-                        <div class="detail-img-wrapper">
-                            <img src="./assets/images/phone.svg" alt="phone">
-                        </div>
-                        <div>
-                            <span>+91 9845423366</span><br/>
-                            <span>+91 9686637360</span><br/>
-                            <span>+91 7829550276</span>
-                        </div>
-                    </div>
-
-                    <div class="detail-wrapper email-detail">
-                        <div class="detail-img-wrapper">
-                            <img src="./assets/images/mail.svg" alt="phone">
-                        </div>
-                        <div>
-                            <span>info@hugscounselling.com</span>
-                        </div>
-                    </div>
-
-                    <div class="detail-wrapper location-detail">
-                        <div class="detail-img-wrapper">
-                            <img src="./assets/images/location.svg" alt="phone">
-                        </div>
-                        <div>
-                            <span><b>Location 1 :</b> 1316/F, 18 B Main Road,Marenahalli, 2nd Phase J.P. Nagar, Bengaluru, Karnataka 560078</span><br/>
-                            <span><b>Location 2 :</b> 28, 1st Floor, 3rd B Cross, 18th Main Rd, BTM 2nd Stage, Bengaluru, Karnataka 560076</span>
-                        </div>
-                    </div>
+        <div class="faq-wrapper">
+            <div class="faq active">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    What if I’m just being paranoid?
+                    <span class="arrow"><i class="fa-solid fa-chevron-down"></i></span>
                 </div>
+                <div class="faq-answer">
+                    You’re not. You’re being present. Concern isn’t panic, it’s care in its most powerful form. You know your child best. If something feels off, it’s worth exploring gently.
+                </div>
+            </div>
 
-                <div class="share-btn-wrapper">
-                    <div class="share-btn-bg">
-                        <img src="./assets/images/share.svg" alt="">
-                    </div>
-                    <ul class="social-link-wrapper">
-                        <li>
-                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        </li>
-                    </ul>
+            <div class="faq">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                     I’ve been told to “wait and watch”. Should I?
+                    <span class="arrow"><i class="fa-solid fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    Sometimes waiting is wise. But sometimes, it delays help your child may quietly need. A gentle screening doesn’t force a path; it simply lights the way forward, if needed.
+                </div>
+            </div>
+
+            <div class="faq">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    Will my child be ‘labelled’?
+                    <span class="arrow"><i class="fa-solid fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    At HUGS, we don’t give children labels, we give them language. Tools. A sense of safety. If any terminology is used, it’s clinical, confidential, and always handled with care.
+                </div>
+            </div>
+
+            <div class="faq">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    Is early intervention expensive or intense?
+                    <span class="arrow"><i class="fa-solid fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    It doesn’t have to be. It can begin with something as simple as a conversation, an observation, or a play-based session. We adapt the process to your child’s pace, not the other way around.
+                </div>
+            </div>
+
+            <div class="faq">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    What if my partner or family doesn’t agree with my concerns?
+                    <span class="arrow"><i class="fa-solid fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    This happens more often than you think. You're not overreacting. You’re responding. Sometimes it takes one parent to listen closely for a family to move forward together.
+                </div>
+            </div>
+
+            <div class="faq">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    Will intervention change my child’s personality?
+                    <span class="arrow"><i class="fa-solid fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    No. It will help uncover their strengths, soothe their struggles, and give them the tools to navigate the world. Your child remains who they are, just better understood.
+                </div>
+            </div>
+
+            <div class="faq">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    How do I know if it’s the “right time” to seek help?
+                    <span class="arrow"><i class="fa-solid fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    If you’re asking that question, the right time might be now. Early doesn’t mean urgent; it just means open. Curious. Caring enough to check in early, not late.
+                </div>
+            </div>
+
+            <div class="faq">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    What if I’m just being paranoid?
+                    <span class="arrow"><i class="fa-solid fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    You’re not. You’re being present. Concern isn’t panic, it’s care in its most powerful form. You know your child best. If something feels off, it’s worth exploring gently.
+                </div>
+            </div>
+
+            <div class="faq">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    What if there’s nothing “wrong”?
+                    <span class="arrow"><i class="fa-solid fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    Then that’s a wonderful thing to find out. Sometimes, children are just developing on their own timeline. A little clarity can bring a lot of calm, and even helpful tips for the road ahead.
+                </div>
+            </div>
+
+            <div class="faq">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    What if my child doesn’t want to “go talk to someone”?
+                    <span class="arrow"><i class="fa-solid fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    We don’t start with talking. We start with trust. Play, movement, and stories, our approach is gentle and child-led. Many children don’t even realise they’re in “therapy.”
+                </div>
+            </div>
+
+            <div class="faq">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    Can I come in just to talk, even if I’m not sure what’s going on?
+                    <span class="arrow"><i class="fa-solid fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    Yes. You don’t need a checklist or a diagnosis to walk in. You only need care. We’re here for conversations, clarity, and comfort, no strings, no pressure.
                 </div>
             </div>
         </div>
@@ -422,4 +366,17 @@
       </div>
     </footer>
   </body>
+    <script>
+        function toggleFAQ(element) {
+            const allFaqs = document.querySelectorAll('.faq');
+            const currentFaq = element.parentElement;
+
+            allFaqs.forEach(faq => {
+                if (faq !== currentFaq) {
+                    faq.classList.remove('active');
+                }
+            });
+            currentFaq.classList.toggle('active');
+        }
+    </script>
 </html>
