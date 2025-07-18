@@ -1,6 +1,6 @@
 <?php include 'header.php'; ?>
     <section class="layout-full">
-      <div class="image-with-txt mt-4 mb-16 md:mt-12 md:mb-12">
+      <div class="image-with-txt mt-4 mb-16 md:mt-6 md:mb-12">
         <div class="content">
           <h1 class="mb-4 md:mb-2 heading">
             Because every child deserves to feel seen. And every parent deserves
@@ -70,7 +70,7 @@
       </div>
     </section>
 
-    <section class="rich-text mt-16 mb-16">
+    <section class="rich-text mt-16 mb-16 md:mt-6 md:mb-6">
       <div class="company-description">
         You may be feeling unsure. You may have questions you don’t know how to
         ask. Or maybe… You just have a feeling that something’s not quite right.
@@ -78,7 +78,7 @@
         you’re in the right place.
       </div>
 
-      <div class="stats-container mt-14">
+      <div class="stats-container mt-14 md:mt-4">
         <div class="stat-item">
           <span class="stat-number">150+</span>
           <div class="stat-label">Complete Projects</div>
@@ -103,7 +103,7 @@
 
     <section class="container">
       <div
-        class="image-with-txt second-image-layout image-left mt-16 mb-16 md:mt-12 md:mb-12"
+        class="image-with-txt second-image-layout image-left mt-16 mb-16 md:mt-6 md:mb-2"
       >
         <div class="image">
           <img src="./assets/images/Who are We.jpg" alt="Yoga Woman" />
@@ -166,7 +166,7 @@
 
     <section class="container">
       <div
-        class="image-with-txt second-image-layout image-right mt-16 mb-16 md:mt-12 md:mb-12"
+        class="image-with-txt second-image-layout image-right mt-16 mb-16 md:mt-6 md:mb-6"
       >
         <div class="image">
           <img src="./assets/images/What we believe.jpg" alt="Yoga Woman" />
@@ -234,7 +234,7 @@
 
     <section class="container">
       <div
-        class="image-with-txt second-image-layout image-left mt-16 mb-16 md:mt-12 md:mb-12"
+        class="image-with-txt second-image-layout image-left mt-16 mb-16 md:mt-6 md:mb-6"
       >
         <div class="image">
           <img src="./assets/images/A Spavce to breath.jpg" alt="Yoga Woman" />
@@ -293,7 +293,7 @@
 
     <section class="container">
       <div
-        class="image-with-txt second-image-layout image-right mt-16 mb-16 md:mt-12 md:mb-12"
+        class="image-with-txt second-image-layout image-right mt-16 mb-16 md:mt-6 md:mb-6"
       >
         <div class="image">
           <img src="./assets/images/Your Family.jpg" alt="Yoga Woman" />
