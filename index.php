@@ -1,226 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Swiper CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="./assets/css/output.css" />
-
-    <!-- Swiper JS -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
-      defer
-    ></script>
-    <script src="./assets/js/swipper.js" defer></script>
-
-    <!-- Navbar Js  -->
-    <script src="./assets/js/navbar.js" defer></script>
-
-    <!-- Font awesome Icons -->
-    <script
-      src="https://kit.fontawesome.com/9de8e65a42.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <header class="header">
-      <!-- Navigation Bar -->
-      <nav class="navbar">
-        <div class="nav-container">
-          <!-- Mobile Hamburger -->
-          <div class="hamburger" id="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
-
-          <!-- Logo -->
-          <div class="nav-logo">
-            <a href="#" class="logo">
-              <img src="./assets/images/HUGS Logo Final PNG-01.png  " />
-            </a>
-          </div>
-
-          <!-- Desktop Navigation Links -->
-          <ul class="nav-menu">
-            <li class="nav-item">
-              <a href="index.html" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="/about-us.html" class="nav-link">About</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Services</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a href="contact-us.html" class="nav-link">Contact</a>
-            </li>
-          </ul>
-
-          <!-- Desktop CTA Button -->
-          <div class="nav-buttons">
-            <div class="contact-us">
-              <a href="tel:+%201(212)%20255-511">
-                <span class="phone-icon">
-                  <img src="./assets/images/phone.svg" />
-                </span>
-
-                <span class="pbmit-header-button-text-1">+91 (212)255-511</span>
-              </a>
-            </div>
-            <button class="button primary-button">
-              Get Started
-              <div class="button__circle">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  id="Layer_1"
-                  data-name="Layer 1"
-                  viewBox="0 0 1402.53 1457.81"
-                  class="button__icon"
-                >
-                  <defs>
-                    <style>
-                      .cls-1 {
-                        fill: none;
-                        stroke: #000;
-                        stroke-miterlimit: 10;
-                        stroke-width: 90.41px;
-                      }
-                    </style>
-                  </defs>
-                  <line
-                    class="cls-1"
-                    x1="39.75"
-                    y1="1420.36"
-                    x2="1376.18"
-                    y2="40.2"
-                  />
-                  <path
-                    class="cls-1"
-                    d="M53.72,61.46c59.41,50.9,296.13,241.65,652.42,240.56,369.81-1.13,611.09-208.15,667-258.78"
-                  />
-                  <path
-                    class="cls-1"
-                    d="M1356.99,1360.99c-50.9-59.41-241.65-296.13-240.56-652.42,1.13-369.81,208.15-611.09,258.78-667"
-                  />
-                  <!-- Code injected by live-server -->
-                </svg>
-
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  id="Layer_1"
-                  class="button__icon button__icon--copy"
-                  data-name="Layer 1"
-                  viewBox="0 0 1402.53 1457.81"
-                  class="button__icon"
-                >
-                  <defs>
-                    <style>
-                      .cls-1 {
-                        fill: none;
-                        stroke: #000;
-                        stroke-miterlimit: 10;
-                        stroke-width: 90.41px;
-                      }
-                    </style>
-                  </defs>
-                  <line
-                    class="cls-1"
-                    x1="39.75"
-                    y1="1420.36"
-                    x2="1376.18"
-                    y2="40.2"
-                  />
-                  <path
-                    class="cls-1"
-                    d="M53.72,61.46c59.41,50.9,296.13,241.65,652.42,240.56,369.81-1.13,611.09-208.15,667-258.78"
-                  />
-                  <path
-                    class="cls-1"
-                    d="M1356.99,1360.99c-50.9-59.41-241.65-296.13-240.56-652.42,1.13-369.81,208.15-611.09,258.78-667"
-                  />
-                  <!-- Code injected by live-server -->
-                </svg>
-              </div>
-            </button>
-          </div>
-        </div>
-      </nav>
-
-      <!-- Mobile Drawer Overlay -->
-      <div class="drawer-overlay" id="drawerOverlay"></div>
-
-      <!-- Mobile Drawer -->
-      <div class="mobile-drawer" id="mobileDrawer">
-        <div class="drawer-header">
-          <div class="drawer-logo">
-            <div class="logo-icon">Menu</div>
-          </div>
-          <button class="close-btn" id="closeBtn">&times;</button>
-        </div>
-        <ul class="drawer-menu">
-          <li><a href="#" class="drawer-link">Home</a></li>
-          <li><a href="#" class="drawer-link">About</a></li>
-          <li><a href="#" class="drawer-link">Services</a></li>
-          <li><a href="#" class="drawer-link">Portfolio</a></li>
-          <li><a href="#" class="drawer-link">Contact</a></li>
-        </ul>
-        <div class="drawer-footer">
-          <button class="drawer-cta-btn">Get Started</button>
-        </div>
-      </div>
-      <div class="header-banner mt-4">
-        <div class="header-banner-image">
-          <picture>
-            <!-- Mobile image (up to 767px) -->
-            <source
-              media="(max-width: 767px)"
-              srcset="./assets/images/01_mobile.png"
-            />
-
-            <!-- Desktop image (768px and above) -->
-            <source
-              media="(min-width: 768px)"
-              srcset="./assets/images/01 copy.png"
-            />
-
-            <!-- Fallback image if <source> isn't supported -->
-            <img
-              src="./assets/images/01 copy.png"
-              alt="Header Banner"
-            />
-          </picture>
-        </div>
-
-        <div class="header-banner-content">
-          <h1 class="header-banner-title mb- pb-3">
-            All Healing <br />
-            <b>Begins With a Hug</b>
-          </h1>
-
-          <h2 class="header-banner-sub-title pt-4">
-            Support for every child. Empowerment for every family.
-          </h2>
-        </div>
-      </div>
-    </header>
+<?php
+$currentPage = "home";
+include 'header.php';
+?>
 
     <section class="container">
-      <div class="image-with-txt mt-16 mb-16 md:mt-12 md:mb-12">
+      <div class="image-with-txt mt-16 mb-16 md:mt-6 md:mb-12">
         <div class="image">
           <img src="./assets/images/study.jpg" alt="Yoga Woman" />
           <div class="stats-container">
@@ -277,7 +61,7 @@
       </div>
     </section>
 
-    <section class="services-section mt-16 md:mt-12 container">
+    <section class="services-section mt-16 md:mt-6 container">
       <div class="badge pb-5 md:pb-4">
         <span>SOLUTIONS</span>
       </div>
@@ -923,7 +707,7 @@
       </div>
     </section>
 
-    <section class="image-overlap-section container mt-16 pt-6 mb-16 pb-6">
+    <section class="image-overlap-section container mt-16 md:mt-6 pt-6 mb-16 md:mb-6 pb-6">
       <div class="text-content">
         <h2 class="mb-2">Everything Under <br> One Roof</h2>
         <p>
@@ -961,7 +745,7 @@
       </div>
     </section>
 
-    <section class="container mt-12 mb-16 md:mt-12 md:mb-12">
+    <section class="container mt-12 mb-16 md:mt-6 md:mb-12">
       <div class="cta-container">
         <div class="cta-content">
           <div class="left-section">
@@ -977,7 +761,7 @@
             </div>
           </div>
 
-          <button class="button primary-button">
+          <a href="about-us.php" class="button primary-button">
             About Us
             <div class="button__circle">
               <svg
@@ -1051,14 +835,14 @@
                 <!-- Code injected by live-server -->
               </svg>
             </div>
-          </button>
+          </a>
         </div>
       </div>
     </section>
     <section class="lifestyle-section container">
       <div class="heading mb-8 md:mb-6">
         <h2>Why HUGS</h2>
-        <button class="button primary-button">
+        <a href="contact-us.php" class="button primary-button">
           Contact Us
           <div class="button__circle">
             <svg
@@ -1132,7 +916,7 @@
               <!-- Code injected by live-server -->
             </svg>
           </div>
-        </button>
+        </a>
       </div>
 
       <div class="lifestyle-container">
@@ -1511,10 +1295,10 @@
       </div>
     </section>
 
-    <section class="contact-section container mt-16 md:mt-12">
+    <section class="contact-section container mt-16 md:mt-6">
       <div class="call-us mb-8">
         <h2>Let’s build a path of care, together.</h2>
-        <button class="button primary-button">
+        <a href="contact-us.php" class="button primary-button">
           CONTACT US
           <div class="button__circle">
             <svg
@@ -1588,7 +1372,7 @@
               <!-- Code injected by live-server -->
             </svg>
           </div>
-        </button>
+        </a>
       </div>
       <div class="contact-cards">
         <div class="contact-card">
@@ -1765,85 +1549,4 @@
       </div>
     </section>
 
-    <footer class="site-footer mt-16">
-      <div class="footer-top">
-        <div class="message">sometimes a hug is all your little one needs</div>
-
-        <div class="contact-us">
-          <a href="tel:+%201(212)%20255-511">
-            <span class="phone-icon">
-              <img src="./assets/images/phone.svg" />
-            </span>
-            <span class="pbmit-header-button-text-1">+91 (212)255-511</span>
-          </a>
-        </div>
-      </div>
-      <div class="footer-mid">
-        <div class="footer-column logo-area">
-          <img
-            src="./assets/images/HUGS Logo Final PNG-01.png"
-            alt="Logo"
-            class="footer-logo"
-          />
-
-          <div class="social-icons">
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-          </div>
-        </div>
-
-        <div class="footer-column description-area">
-          <h3>Inspiring Growth and Learning for your Child</h3>
-          <div class="footer-links">
-            <div>
-              <h4>Quick Links</h4>
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About </a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4>Get In Touch</h4>
-              <p>
-                +91 9845423366 <br />
-                +91 9686637360 <br />
-                +91 7829550276 <br /><br />
-
-                info@hugscounselling.com
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <div class="footer-left">
-          <a href="#">Terms and conditions</a> | <a href="#">Privacy policy</a>
-        </div>
-        <div class="footer-right">© 2024 HUGS. All rights reserved.</div>
-      </div>
-    </footer>
-  </body>
-  <script>
-    const tabButtons = document.querySelectorAll(".tab-button");
-    const tabContents = document.querySelectorAll(".tab-content");
-
-    tabButtons.forEach((button) => {
-      button.addEventListener("click", () => {
-        const tabId = button.getAttribute("data-tab");
-
-        tabButtons.forEach((btn) => btn.classList.remove("active"));
-        tabContents.forEach((content) => content.classList.remove("active"));
-
-        button.classList.add("active");
-        document.getElementById(tabId).classList.add("active");
-      });
-    });
-  </script>
-</html>
+<?php include 'footer.php'; ?>

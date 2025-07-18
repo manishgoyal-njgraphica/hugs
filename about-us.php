@@ -1,190 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Swiper CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="./assets/css/output.css" />
-
-    <!-- Swiper JS -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
-      defer
-    ></script>
-    <script src="./assets/js/swipper.js" defer></script>
-
-    <!-- Navbar Js  -->
-    <script src="./assets/js/navbar.js" defer></script>
-
-    <!-- Font awesome Icons -->
-    <script
-      src="https://kit.fontawesome.com/9de8e65a42.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <header class="header">
-      <!-- Navigation Bar -->
-      <nav class="navbar">
-        <div class="nav-container">
-          <!-- Mobile Hamburger -->
-          <div class="hamburger" id="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
-
-          <!-- Logo -->
-          <div class="nav-logo">
-            <a href="#" class="logo">
-              <img src="./assets/images/HUGS Logo Final PNG-01.png  " />
-            </a>
-          </div>
-
-          <!-- Desktop Navigation Links -->
-          <ul class="nav-menu">
-            <li class="nav-item">
-              <a href="index.html" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="/about-us.html" class="nav-link">About</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Services</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a href="contact-us.html" class="nav-link">Contact</a>
-            </li>
-          </ul>
-
-          <!-- Desktop CTA Button -->
-          <div class="nav-buttons">
-            <div class="contact-us">
-              <a href="tel:+%201(212)%20255-511">
-                <span class="phone-icon">
-                  <img src="./assets/images/phone.svg" />
-                </span>
-
-                <span class="pbmit-header-button-text-1">+91 (212)255-511</span>
-              </a>
-            </div>
-            <button class="button primary-button">
-              Get Started
-              <div class="button__circle">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  id="Layer_1"
-                  data-name="Layer 1"
-                  viewBox="0 0 1402.53 1457.81"
-                  class="button__icon"
-                >
-                  <defs>
-                    <style>
-                      .cls-1 {
-                        fill: none;
-                        stroke: #000;
-                        stroke-miterlimit: 10;
-                        stroke-width: 90.41px;
-                      }
-                    </style>
-                  </defs>
-                  <line
-                    class="cls-1"
-                    x1="39.75"
-                    y1="1420.36"
-                    x2="1376.18"
-                    y2="40.2"
-                  />
-                  <path
-                    class="cls-1"
-                    d="M53.72,61.46c59.41,50.9,296.13,241.65,652.42,240.56,369.81-1.13,611.09-208.15,667-258.78"
-                  />
-                  <path
-                    class="cls-1"
-                    d="M1356.99,1360.99c-50.9-59.41-241.65-296.13-240.56-652.42,1.13-369.81,208.15-611.09,258.78-667"
-                  />
-                  <!-- Code injected by live-server -->
-                </svg>
-
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  id="Layer_1"
-                  class="button__icon button__icon--copy"
-                  data-name="Layer 1"
-                  viewBox="0 0 1402.53 1457.81"
-                  class="button__icon"
-                >
-                  <defs>
-                    <style>
-                      .cls-1 {
-                        fill: none;
-                        stroke: #000;
-                        stroke-miterlimit: 10;
-                        stroke-width: 90.41px;
-                      }
-                    </style>
-                  </defs>
-                  <line
-                    class="cls-1"
-                    x1="39.75"
-                    y1="1420.36"
-                    x2="1376.18"
-                    y2="40.2"
-                  />
-                  <path
-                    class="cls-1"
-                    d="M53.72,61.46c59.41,50.9,296.13,241.65,652.42,240.56,369.81-1.13,611.09-208.15,667-258.78"
-                  />
-                  <path
-                    class="cls-1"
-                    d="M1356.99,1360.99c-50.9-59.41-241.65-296.13-240.56-652.42,1.13-369.81,208.15-611.09,258.78-667"
-                  />
-                  <!-- Code injected by live-server -->
-                </svg>
-              </div>
-            </button>
-          </div>
-        </div>
-      </nav>
-
-      <!-- Mobile Drawer Overlay -->
-      <div class="drawer-overlay" id="drawerOverlay"></div>
-
-      <!-- Mobile Drawer -->
-      <div class="mobile-drawer" id="mobileDrawer">
-        <div class="drawer-header">
-          <div class="drawer-logo">
-            <div class="logo-icon">Menu</div>
-          </div>
-          <button class="close-btn" id="closeBtn">&times;</button>
-        </div>
-        <ul class="drawer-menu">
-          <li><a href="#" class="drawer-link">Home</a></li>
-          <li><a href="#" class="drawer-link">About</a></li>
-          <li><a href="#" class="drawer-link">Services</a></li>
-          <li><a href="#" class="drawer-link">Portfolio</a></li>
-          <li><a href="#" class="drawer-link">Contact</a></li>
-        </ul>
-        <div class="drawer-footer">
-          <button class="drawer-cta-btn">Get Started</button>
-        </div>
-      </div>
-    </header>
-
+<?php include 'header.php'; ?>
     <section class="layout-full">
       <div class="image-with-txt mt-4 mb-16 md:mt-12 md:mb-12">
         <div class="content">
@@ -211,24 +25,16 @@
                 <span style="--index: 3">L</span>
                 <span style="--index: 4">D</span>
                 <span style="--index: 5"> </span>
-                <span style="--index: 6">D</span>
-                <span style="--index: 7">E</span>
-                <span style="--index: 8">V</span>
-                <span style="--index: 9">E</span>
-                <span style="--index: 10">L</span>
-                <span style="--index: 11">O</span>
-                <span style="--index: 12">P</span>
-                <span style="--index: 13">M</span>
-                <span style="--index: 14">E</span>
-                <span style="--index: 15">N</span>
-                <span style="--index: 16">T</span>
+                <span style="--index: 6">G</span>
+                <span style="--index: 7">R</span>
+                <span style="--index: 8">O</span>
+                <span style="--index: 9">W</span>
+                <span style="--index: 10">T</span>
+                <span style="--index: 11">H</span>
                 <span style="--index: 17"> </span>
-                <span style="--index: 18">C</span>
-                <span style="--index: 19">E</span>
-                <span style="--index: 20">N</span>
-                <span style="--index: 21">T</span>
-                <span style="--index: 22">E</span>
-                <span style="--index: 23">R</span>
+                <span style="--index: 32">H</span>
+                <span style="--index: 33">U</span>
+                <span style="--index: 34">B</span>
               </p>
 
               <div class="button__circle">
@@ -326,7 +132,15 @@
             >
               <path d="M30 30V0C30 16 16 30 0 30H30Z"></path>
             </svg>
-            <div class="second-image"></div>
+            <div class="second-image">
+              <video
+                src="./assets/images/about/1.mp4"
+                autoplay
+                muted
+                playsinline
+                loop
+              ></video>
+            </div>
           </div>
         </div>
         <div class="content">
@@ -389,7 +203,15 @@
             >
               <path d="M30 30V0C30 16 16 30 0 30H30Z"></path>
             </svg>
-            <div class="second-image"></div>
+            <div class="second-image">
+              <video
+                src="./assets/images/about/2.mp4"
+                autoplay
+                muted
+                playsinline
+                loop
+              ></video>
+            </div>
           </div>
         </div>
         <div class="content">
@@ -441,7 +263,15 @@
             >
               <path d="M30 30V0C30 16 16 30 0 30H30Z"></path>
             </svg>
-            <div class="second-image"></div>
+            <div class="second-image">
+              <video
+                src="./assets/images/about/3.mp4"
+                autoplay
+                muted
+                playsinline
+                loop
+              ></video>
+            </div>
           </div>
         </div>
         <div class="content">
@@ -500,7 +330,15 @@
             >
               <path d="M30 30V0C30 16 16 30 0 30H30Z"></path>
             </svg>
-            <div class="second-image"></div>
+            <div class="second-image">
+              <video
+                src="./assets/images/about/4.mp4"
+                autoplay
+                muted
+                playsinline
+                loop
+              ></video>
+            </div>
           </div>
         </div>
         <div class="content">
@@ -777,69 +615,4 @@
       </div>
     </section>
 
-    <footer class="site-footer mt-16">
-      <div class="footer-top">
-        <div class="message">sometimes a hug is all your little one needs</div>
-
-        <div class="contact-us">
-          <a href="tel:+%201(212)%20255-511">
-            <span class="phone-icon">
-              <img src="./assets/images/phone.svg" />
-            </span>
-            <span class="pbmit-header-button-text-1">+91 (212)255-511</span>
-          </a>
-        </div>
-      </div>
-      <div class="footer-mid">
-        <div class="footer-column logo-area">
-          <img
-            src="./assets/images/HUGS Logo Final PNG-01.png"
-            alt="Logo"
-            class="footer-logo"
-          />
-
-          <div class="social-icons">
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-          </div>
-        </div>
-
-        <div class="footer-column description-area">
-          <h3>Inspiring Growth and Learning for your Child</h3>
-          <div class="footer-links">
-            <div>
-              <h4>Quick Links</h4>
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About </a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4>Get In Touch</h4>
-              <p>
-                +91 9845423366 <br />
-                +91 9686637360 <br />
-                +91 7829550276 <br /><br />
-
-                info@hugscounselling.com
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <div class="footer-left">
-          <a href="#">Terms and conditions</a> | <a href="#">Privacy policy</a>
-        </div>
-        <div class="footer-right">© 2024 HUGS. All rights reserved.</div>
-      </div>
-    </footer>
-  </body>
-</html>
+<?php include 'footer.php'; ?>
