@@ -1,7 +1,7 @@
 <?php include 'header.php'; ?>
 
     <section class="layout-full">
-      <div class="image-with-txt mt-5 mb-16 md:mt-12 md:mb-12 py-2">
+      <div class="image-with-txt mt-5 mb-16 md:mt-6 md:mb-12 py-2">
         <div class="content">
           <h1 class="mb-4 md:mb-2 heading">
             Helping Every Child <span> Grow </span>with <span>Care,</span>
@@ -30,7 +30,7 @@
       </div>
     </section>
 
-    <section class="services-section mt-16 mb-16 md:mt-12 container">
+    <section class="services-section mt-16 mb-16 md:mt-6 md:mb-6 container">
       <div class="badge pb-5 md:pb-4">
         <span>SPEECH THERAPY</span>
       </div>
@@ -162,7 +162,7 @@
 
     <section class="container">
       <div
-        class="image-with-txt contain-height mt-5 mb-16 md:mt-12 md:mb-12 service-bg-white"
+        class="image-with-txt contain-height mt-5 mb-16 md:mt-6 md:mb-6 service-bg-white desktop-section"
       >
         <div class="image">
           <img src="./assets/images/02.jpg" alt="Yoga Woman" />
@@ -250,9 +250,99 @@
           </p>
         </div>
       </div>
+
+      <div
+        class="image-with-txt contain-height mt-5 mb-16 md:mt-6 md:mb-6 mobile-section"
+      >
+        <div class="image">
+          <img src="./assets/images/02.jpg" alt="Yoga Woman" />
+        </div>
+
+        <div class="">
+          <h2 class="mb-4 md:mb-2 md:mt-4 heading">Occupational Therapy</h2>
+          <h3>Big feelings? Small frustrations? We help with both.</h3>
+          <br />
+          <p>
+            At <b>HUGS,</b> we understand that reaching out for help isn’t
+            always easy. Especially when it’s about your child.
+          </p>
+          <br />
+          <p class="mb-8 md:mb-4">
+            Occupational therapy is often misunderstood. It’s not just about
+            ‘occupation’, it’s about giving your child the tools to engage with
+            the world more fully, joyfully, and independently. <br /><br />
+            Through play-based and sensory-friendly approaches, we support:
+          </p>
+
+          <ul class="content-related-points">
+            <li class="points">
+              <h4>Developmental Delays</h4>
+              <p>
+                Identifying and addressing missed or delayed milestones with
+                gentle, structured interventions.
+              </p>
+            </li>
+            <li class="points">
+              <h4>Gross Motor Deficits</h4>
+              <p>
+                Helping with balance, strength, posture, and coordination for
+                better movement and confidence in physical activities.
+              </p>
+            </li>
+            <li class="points">
+              <h4>Fine Motor Impairments</h4>
+              <p>
+                Improving hand strength, writing skills, and everyday tasks like
+                buttoning shirts or holding cutlery.
+              </p>
+            </li>
+            <li class="points">
+              <h4>Sensory Processing Issues</h4>
+              <p>
+                For kids who are easily overwhelmed by sights, sounds, textures,
+                or movements. We help them regulate and respond in ways that
+                feel safe and manageable.
+              </p>
+            </li>
+            <li class="points">
+              <h4>Emotional Dysregulation</h4>
+              <p>
+                Supporting children who experience big, hard-to-handle emotions
+                by developing co-regulation skills and calming routines.
+              </p>
+            </li>
+            <li class="points">
+              <h4>Behavioural Challenges</h4>
+              <p>
+                Understanding the “why” behind tantrums, resistance, or
+                avoidance, and building more adaptive responses through play.
+              </p>
+            </li>
+            <li class="points">
+              <h4>Social Interaction Difficulties</h4>
+              <p>
+                Building skills like turn-taking, initiating play, reading
+                social cues, and sustaining friendships.
+              </p>
+            </li>
+            <li class="points">
+              <h4>Attention & Executive Deficits</h4>
+              <p>
+                Helping children improve focus, memory, task completion, and
+                emotional control in a structured yet playful way.
+              </p>
+            </li>
+          </ul>
+
+          <p class="mt-4">
+            Because being a child isn’t easy, and neither is parenting one.
+            We’re here to make both feel lighter.
+          </p>
+        </div>
+    </div>
     </section>
 
-    <section class="services-section mt-16 mb-16 md:mt-12 container">
+    <section class="services-section mt-16 mb-16 md:mt-6 md:mb-6 container">
       <div class="badge pb-5 md:pb-4">
         <span>BEHAVIOURAL THERAPY </span>
       </div>
@@ -344,7 +434,7 @@
       </div>
     </section>
 
-    <section class="branding-section container mt-16 mb-16">
+    <section class="branding-section container mt-16 mb-16 md:mb-6 md:mt-6">
       <div class="branding-images">
         <div class="collage">
           <img
@@ -428,8 +518,8 @@
       </div>
     </section>
 
-    <section class="how-it-works mt-16 mb-16 container">
-      <div class="how-it-works__container">
+    <section class="how-it-works mt-16 mb-16 md:mb-6 md:mt-6 container">
+      <div class="how-it-works__container desktop-section">
         <div class="how-it-works__left">
           <img src="./assets/images/05.jpg" alt="Team Discussion" />
         </div>
@@ -535,9 +625,116 @@
           </div>
         </div>
       </div>
+
+      <div class="how-it-works__container mobile-section">
+        <div class="how-it-works__mob_left">
+          <img src="./assets/images/05.jpg" alt="Team Discussion" />
+        </div>
+
+        <div class="how-it-works">
+          <h2 class="mb-1">Expert Consultations</h2>
+          <h4 class="mb-2">
+            When the path gets unclear, we bring in the right guide.
+          </h4>
+
+          <p class="mb-3">
+            Sometimes, you may need a deeper opinion or medical perspective
+            before taking your next step. We offer in-house and referred
+            consultations with:
+          </p>
+          <div class="how-it-works__steps">
+            <div class="step">
+              <!-- <div class="step-number">01.</div> -->
+              <div class="step-content">
+                <strong>01. Pediatricians</strong>
+                <p>
+                  To rule out or confirm any underlying medical concerns that
+                  may be affecting development.
+                </p>
+              </div>
+            </div>
+
+            <div class="step">
+              <!-- <div class="step-number">02.</div> -->
+              <div class="step-content">
+                <strong>02. Pediatric Neurologists</strong>
+                <p>
+                  For more complex neurological questions, like seizures,
+                  delays, or sensory issues that don’t have a clear cause.
+                </p>
+              </div>
+            </div>
+
+            <div class="step">
+              <!-- <div class="step-number">03.</div> -->
+              <div class="step-content">
+                <strong>03. Child Psychologists</strong>
+                <p>
+                  For emotional or behavioural assessments, anxiety, mood
+                  concerns, or school-related stress.
+                </p>
+              </div>
+            </div>
+          </div>
+          <p>
+            We help facilitate these conversations with care and clarity,
+            ensuring you're never left alone to navigate your child’s needs.
+          </p>
+          <h4 class="mb-3 mt-2">And above all... we offer this:</h4>
+          <div class="how-it-works__steps">
+            <div class="step">
+              <!-- <div class="step-number">04.</div> -->
+              <div class="step-content">
+                <strong
+                  >0.4 A safe space to ask questions you’ve been afraid to
+                  Google</strong
+                >
+              </div>
+            </div>
+
+            <div class="step">
+              <!-- <div class="step-number">05.</div> -->
+              <div class="step-content">
+                <strong>0.5 A warm voice when your inner voice feels unsure</strong>
+              </div>
+            </div>
+
+            <div class="step">
+              <!-- <div class="step-number">06.</div> -->
+              <div class="step-content">
+                <strong
+                  >0.6 A reminder that needing help doesn't mean you're failing, it
+                  means you're showing up</strong
+                >
+              </div>
+            </div>
+
+            <p>
+              At HUGS, you’re not a ‘case.’ You’re a parent. A caregiver. A
+              human. <br />
+              And your child is not a ‘delay.’ They’re a full, beautiful
+              work-in-progress.
+            </p>
+          </div>
+        </div>
+
+        <div class="how-it-works__right">
+          <div class="video-thumbnail">
+            <video
+              src="./assets/images/MicrosoftTeams-video.mp4"
+              autoplay
+              muted
+              playsinline
+              loop
+            ></video>
+
+            <!-- <div class="play-button">&#9658;</div> -->
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="container mt-12 mb-16 md:mt-12 md:mb-12">
+    <section class="container mt-12 mb-16 md:mb-6 md:mt-6">
       <div class="cta-container">
         <div class="cta-content">
           <div class="left-section">
@@ -565,7 +762,7 @@
       </div>
     </section>
 
-    <section class="contact-section container mt-16 md:mt-12">
+    <section class="contact-section container mt-16 md:mb-6 md:mt-6">
       <div class="call-us mb-8">
         <h2>Let’s build a path of care, together.</h2>
         <button class="button primary-button">

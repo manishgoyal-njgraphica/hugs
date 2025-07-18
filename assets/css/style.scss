@@ -79,9 +79,6 @@ span {
   font-weight: 400;
   font-size: $font-size-base;
   line-height: 24px;
-  @media(max-width: 767px){
-    padding-left: 10px
-  }
 }
 
 a {
@@ -816,6 +813,9 @@ button {
     .controls {
       display: flex;
       gap: 10px;
+      @media(max-width: 768px){
+        margin-top: 20px
+      }
 
       img {
         width: clamp(20px, 5vw, 34px);
@@ -1201,6 +1201,7 @@ button {
 
   @media (max-width: 768px) {
     flex-direction: column;
+    height: 100% !important;
   }
 
   &.second-image-layout.image-left {
@@ -1277,6 +1278,9 @@ button {
   .image {
     flex: 45%;
     position: relative;
+    @media(max-width: 768px){
+      margin-top: 20px
+    }
 
     .rotating-button-container {
       background: #e9f0ec;
@@ -2452,23 +2456,40 @@ button {
   }
 
   @media (max-width: 992px) {
-    &__container {
-      flex-direction: column;
+    // &__container {
+    //   flex-direction: column;
+    // }
+
+    // &__left,
+    // &__center,
+    // &__right {
+    //   max-width: 100%;
+    // }
+
+    // &__center {
+    //   text-align: center;
+
+    //   .step {
+    //     justify-content: center;
+    //     text-align: left;
+    //   }
+    // }
+
+    .how-it-works__mob_left{
+      img{
+        width: 100%;
+        border-radius: 30px;
+      }
     }
-
-    &__left,
-    &__center,
-    &__right {
-      max-width: 100%;
-    }
-
-    &__center {
-      text-align: center;
-
-      .step {
+    .step {
         justify-content: center;
         text-align: left;
+        .step-content{
+        margin-bottom: 20px;
       }
+    }
+    .how-it-works__right {
+      max-width: 100%;
     }
   }
 }
@@ -3041,5 +3062,17 @@ button {
   .sub-text{
     margin-top: 2rem;
     text-align: center;
+  }
+}
+
+.desktop-section{
+  @media(max-width: 768px){
+    display: none;
+  }
+}
+
+.mobile-section{
+  @media(min-width: 769px){
+    display: none;
   }
 }
