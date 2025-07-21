@@ -1,5 +1,5 @@
 <?php include 'header.php'; ?>
-    <section class="contact-section container mt-16 md:mt-12">
+    <section class="contact-section container mt-16 md:mt-6">
         <h2 class="mb-2">Contact Us</h2>
         <!-- <p>There are many variations of passages of Lorem Ipsum available, but the in some form, or randomised words which don't look even.</p> -->
         <div class="contact-form-wrapper">

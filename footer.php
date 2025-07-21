@@ -7,7 +7,7 @@
             <span class="phone-icon">
               <img src="./assets/images/phone.svg" />
             </span>
-            <span class="pbmit-header-button-text-1">+91 (212)255-511</span>
+            <span class="pbmit-header-button-text-1">+91 9845423366</span>
           </a>
         </div>
       </div>
@@ -33,11 +33,11 @@
             <div>
               <h4>Quick Links</h4>
               <ul>
-                <li><a href="index.php">Home</a></li>
+                <li><a href="/">Home</a></li>
                 <li><a href="about-us.php">About </a></li>
                 <li><a href="service.php">Services</a></li>
                 <li><a href="for-parents.php">For Parents</a></li>
-                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="faq.php">FAQ</a></li>
                 <li><a href="contact-us.php">Contact</a></li>
               </ul>
             </div>
@@ -58,6 +58,9 @@
       <div class="footer-bottom">
         <div class="footer-left">
           <a href="#">Terms and conditions</a> | <a href="#">Privacy policy</a>
+        </div>
+        <div class="footer-center">
+          Design by <a href="https://njgraphica.com/" target="_blank">Nj Graphica</a>
         </div>
         <div class="footer-right">© 2025 HUGS. All rights reserved.</div>
       </div>

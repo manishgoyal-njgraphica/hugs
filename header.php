@@ -3,9 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>HUGS- Healing Uniquely Gifted Souls</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png">
     <link
       href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
       rel="stylesheet"
@@ -47,7 +49,7 @@
 
           <!-- Logo -->
           <div class="nav-logo">
-            <a href="#" class="logo">
+            <a href="/" class="logo">
               <img src="./assets/images/HUGS Logo Final PNG-01.png  " />
             </a>
           </div>
@@ -55,7 +57,7 @@
           <!-- Desktop Navigation Links -->
           <ul class="nav-menu">
             <li class="nav-item">
-              <a href="index.php" class="nav-link">Home</a>
+              <a href="/" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
               <a href="about-us.php" class="nav-link">About</a>
@@ -69,6 +71,9 @@
             <li class="nav-item">
               <a href="contact-us.php" class="nav-link">Contact</a>
             </li>
+            <li class="nav-item">
+              <a href="https://hulmcounselling.com/" target="_blank" class="nav-link">Hulm</a>
+            </li>
           </ul>
 
           <!-- Desktop CTA Button -->
@@ -79,10 +84,10 @@
                   <img src="./assets/images/phone.svg" />
                 </span>
 
-                <span class="pbmit-header-button-text-1">+91 (212)255-511</span>
+                <span class="pbmit-header-button-text-1">+91 9845423366</span>
               </a>
             </div>
-            <button class="button primary-button">
+            <a href="contact-us.php" class="button primary-button">
               Get Started
               <div class="button__circle">
                 <svg
@@ -156,7 +161,7 @@
                   <!-- Code injected by live-server -->
                 </svg>
               </div>
-            </button>
+            </a>
           </div>
         </div>
       </nav>
@@ -173,14 +178,15 @@
           <button class="close-btn" id="closeBtn">&times;</button>
         </div>
         <ul class="drawer-menu">
-          <li><a href="index.php" class="drawer-link">Home</a></li>
+          <li><a href="/" class="drawer-link">Home</a></li>
           <li><a href="about-us.php" class="drawer-link">About</a></li>
           <li><a href="service.php" class="drawer-link">Services</a></li>
           <li><a href="for-parents.php" class="drawer-link">For Parents</a></li>
           <li><a href="contact-us.php" class="drawer-link">Contact</a></li>
+          <li><a href="https://hulmcounselling.com/" class="drawer-link" target="_blank">Hulm</a></li>
         </ul>
         <div class="drawer-footer">
-          <button class="drawer-cta-btn">Get Started</button>
+          <a class="drawer-cta-btn" href="contact-us.php">Get Started</a>
         </div>
       </div>
       <?php
@@ -189,7 +195,7 @@
         }
       ?>
      <?php if ($currentPage == "home") { ?>
-        <div class="header-banner mt-4">
+        <div class="header-banner mt-4 md:mt-6">
           <!-- Banner for Home -->
           <div class="header-banner-image">
             <picture>

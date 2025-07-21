@@ -281,7 +281,7 @@ button {
         padding: 8px 0;
 
         &:hover {
-          color: $color-white;
+          color: #448c73;
         }
 
         &::after {
@@ -291,7 +291,7 @@ button {
           height: 2px;
           bottom: 0;
           left: 0;
-          background: $color-white;
+          background: #448c73;
           transition: width 0.3s ease;
         }
 
@@ -347,7 +347,7 @@ button {
   .bar {
     width: 25px;
     height: 3px;
-    background: $color-white;
+    background: $color-black;
     margin: 3px 0;
     transition: 0.3s;
     border-radius: 2px;
@@ -843,9 +843,9 @@ button {
 
         /* Disabled state (aria-disabled="true") */
         &[aria-disabled="true"] {
-          cursor: not-allowed;
           opacity: 0.5;
-          pointer-events: none;
+          pointer-events: auto;
+          cursor: pointer;
         }
       }
     }
@@ -854,6 +854,9 @@ button {
   .swiper {
     width: 100%;
     padding-bottom: 40px;
+    @media(max-width: 768px){
+      padding-bottom: 0;
+    }
 
     @media (min-width: 1750px) {
       padding-inline: 0px;
@@ -1050,7 +1053,7 @@ button {
         height: 100%;
 
         @media (max-width: 768px) {
-          min-height: 350px;
+          min-height: 450px;
         }
 
         h3 {
@@ -1202,6 +1205,7 @@ button {
   @media (max-width: 768px) {
     flex-direction: column;
     height: 100% !important;
+    border-radius: 0;
   }
 
   &.second-image-layout.image-left {
@@ -1787,6 +1791,12 @@ button {
       }
     }
 
+    .footer-center{
+      a{
+        color: #448c73;
+      }
+    }
+
     .footer-right {
       color: $color-text;
       @media(max-width: 767px){
@@ -2204,7 +2214,7 @@ button {
 
   @media (max-width: 480px) {
     .stats-container {
-      grid-template-columns: 1fr;
+      grid-template-columns: 1fr 1fr;
       gap: 25px;
 
       .stat-number {
@@ -2907,11 +2917,18 @@ button {
     color: #fff;
     padding: 3rem 6rem;
     text-align: center;
+    @media(max-width: 768px){
+      padding: 2rem;
+    }
     .dark-bg-wrapper{
       display: flex;
       gap: 4rem;
       flex-wrap: wrap;
       margin-top: 3rem;
+      @media(max-width: 768px){
+        flex-direction: column;
+        gap: 0;
+      }
       .left-panel{
         flex: 1;
         img{
@@ -2955,6 +2972,11 @@ button {
     align-items: center;
     gap: 20rem;
     margin-top: 4rem;
+    @media(max-width: 768px){
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
     .development-bottom-left{
       .image-wrapper {
         position: relative;
@@ -2972,6 +2994,11 @@ button {
           position: absolute;
           top: 10rem;
           right: -10rem;
+          @media(max-width: 768px){
+            position: relative;
+            top: 0;
+            right: 0;
+          }
         }
       }
     }
@@ -2996,12 +3023,19 @@ button {
 }
 
 .three-image-section{
+  display: flex;
+  flex-direction: column;
   .image-wrapper{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 2rem;
     position: relative;
+    @media(max-width: 768px){
+      flex-direction: column;
+      order: 2;
+      margin-top: 2rem;
+    }
     img{
       width: 100%;
       border-radius: 20px;
@@ -3012,6 +3046,9 @@ button {
     .second-image{
       flex: 1;
       margin-top: -100px;
+      @media(max-width: 768px){
+        margin-top: 0;
+      }
     }
     .third-image{
       flex: 1;
@@ -3021,6 +3058,9 @@ button {
     max-width: 58rem;
     margin: 4rem auto;
     text-align: center;
+    // @media(max-width: 768px){
+    //   order: 1
+    // }
     h2{
       text-align: center;
     }
@@ -3074,5 +3114,14 @@ button {
 .mobile-section{
   @media(min-width: 769px){
     display: none;
+  }
+}
+
+
+.content-related-points{
+  li{
+    @media(max-width: 768px){
+      margin-bottom: 1rem
+    }
   }
 }

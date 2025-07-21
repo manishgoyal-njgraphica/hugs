@@ -932,7 +932,7 @@ button {
   padding: 8px 0;
 }
 .header .navbar .nav-menu .nav-link:hover {
-  color: #ffffff;
+  color: #448c73;
 }
 .header .navbar .nav-menu .nav-link::after {
   content: "";
@@ -941,7 +941,7 @@ button {
   height: 2px;
   bottom: 0;
   left: 0;
-  background: #ffffff;
+  background: #448c73;
   transition: width 0.3s ease;
 }
 .header .navbar .nav-menu .nav-link:hover::after {
@@ -984,7 +984,7 @@ button {
 .hamburger .bar {
   width: 25px;
   height: 3px;
-  background: #ffffff;
+  background: #181a18;
   margin: 3px 0;
   transition: 0.3s;
   border-radius: 2px;
@@ -1414,13 +1414,18 @@ button {
 }
 .services-section .heading-with-ctrls .controls .button-prev[aria-disabled=true],
 .services-section .heading-with-ctrls .controls .button-next[aria-disabled=true] {
-  cursor: not-allowed;
   opacity: 0.5;
-  pointer-events: none;
+  pointer-events: auto;
+  cursor: pointer;
 }
 .services-section .swiper {
   width: 100%;
   padding-bottom: 40px;
+}
+@media (max-width: 768px) {
+  .services-section .swiper {
+    padding-bottom: 0;
+  }
 }
 @media (min-width: 1750px) {
   .services-section .swiper {
@@ -1492,7 +1497,7 @@ button {
 }
 @media (max-width: 768px) {
   .services-section .swiper-slide.card .card-content-wrapper {
-    min-height: 350px;
+    min-height: 450px;
   }
 }
 .services-section .swiper-slide.card .card-content-wrapper h3 {
@@ -1622,6 +1627,7 @@ button {
   .image-with-txt {
     flex-direction: column;
     height: 100% !important;
+    border-radius: 0;
   }
 }
 .image-with-txt.second-image-layout.image-left .image {
@@ -2174,6 +2180,9 @@ button {
 .site-footer .footer-bottom .footer-left a:hover {
   color: #808055;
 }
+.site-footer .footer-bottom .footer-center a {
+  color: #448c73;
+}
 .site-footer .footer-bottom .footer-right {
   color: #333333;
 }
@@ -2557,7 +2566,7 @@ button {
 }
 @media (max-width: 480px) {
   .rich-text .stats-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 25px;
   }
   .rich-text .stats-container .stat-number {
@@ -3049,11 +3058,22 @@ button {
   padding: 3rem 6rem;
   text-align: center;
 }
+@media (max-width: 768px) {
+  .dark-bg-section .text-content {
+    padding: 2rem;
+  }
+}
 .dark-bg-section .text-content .dark-bg-wrapper {
   display: flex;
   gap: 4rem;
   flex-wrap: wrap;
   margin-top: 3rem;
+}
+@media (max-width: 768px) {
+  .dark-bg-section .text-content .dark-bg-wrapper {
+    flex-direction: column;
+    gap: 0;
+  }
 }
 .dark-bg-section .text-content .dark-bg-wrapper .left-panel {
   flex: 1;
@@ -3094,6 +3114,13 @@ button {
   gap: 20rem;
   margin-top: 4rem;
 }
+@media (max-width: 768px) {
+  .development-wrapper .development-bottom-wrapper {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+}
 .development-wrapper .development-bottom-wrapper .development-bottom-left .image-wrapper {
   position: relative;
 }
@@ -3112,6 +3139,13 @@ button {
   top: 10rem;
   right: -10rem;
 }
+@media (max-width: 768px) {
+  .development-wrapper .development-bottom-wrapper .development-bottom-left .image-wrapper .second-image {
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+}
 .development-wrapper .development-bottom-wrapper .development-bottom-right .pointer-wrapper {
   margin-top: 2rem;
 }
@@ -3128,12 +3162,23 @@ button {
   color: #448c73;
 }
 
+.three-image-section {
+  display: flex;
+  flex-direction: column;
+}
 .three-image-section .image-wrapper {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 2rem;
   position: relative;
+}
+@media (max-width: 768px) {
+  .three-image-section .image-wrapper {
+    flex-direction: column;
+    order: 2;
+    margin-top: 2rem;
+  }
 }
 .three-image-section .image-wrapper img {
   width: 100%;
@@ -3145,6 +3190,11 @@ button {
 .three-image-section .image-wrapper .second-image {
   flex: 1;
   margin-top: -100px;
+}
+@media (max-width: 768px) {
+  .three-image-section .image-wrapper .second-image {
+    margin-top: 0;
+  }
 }
 .three-image-section .image-wrapper .third-image {
   flex: 1;
@@ -3203,6 +3253,12 @@ button {
 @media (min-width: 769px) {
   .mobile-section {
     display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .content-related-points li {
+    margin-bottom: 1rem;
   }
 }
 
